@@ -1,0 +1,40 @@
+/* [this is "fixer" for the screen of 1920px] */
+/* @media only screen and (min-width: 1537px) {
+    .wrapper > .wrapper-row {
+    display: grid;
+    width: calc(var(--global-container-width) * 1.25); */ /*= 1800px */
+/*     }
+} */
+
+/* [reference point] */
+@media only screen and (max-width: 1536px) {
+    .wrapper > .wrapper-row {
+    display: grid;
+    width: calc(var(--global-container-width) * 1.00); /* = 1440px */
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .wrapper > .wrapper-row {
+    display: grid;
+    width: calc(var(--global-container-width) * 0.75); /* = 1080px */
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .wrapper > .wrapper-row {
+    display: grid;
+    width: calc(var(--global-container-width) * 0.5); /* = 720px */
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .wrapper > .wrapper-row {
+    display: grid;
+    width: calc(var(--global-container-width) * 0.25); /* = 360px */
+    }
+    .wrapper > .wrapper-row * {
+        grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+}
