@@ -1,114 +1,73 @@
-/* base */
+/* Base : */
 @import './base/reset.css';
-@import './base/variables.css';
+@import './base/variables.css'; /* :root{} comes from this part ; */
 
-/* 3rd-party */
+/* 3rd-party : */
 
-/* components */
+/* Components : */
 @import './components/button.css';
 
-/* CUSTOM STYLE FOR HOME PAGE */
-
-:root{
---global-container-width: 1440px;
-}
+/* CUSTOME STYLE (HOME PAGE) OPEN : */
 
 body, body * {
     padding: 0;
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 48px;
-    font-weight: bold;
-    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 48px; font-weight: bold; color: red;
 }
 
-/* Hereby .col-* css rules for Media queries */
-.wrapper {
+/* If not fluid container, good for centering [might be useful in the future] */
+/* .wrapper {
     display: flex;
     justify-content: center;
-}
+} */
 
 .wrapper > .wrapper-row {
     display: grid;
-    width: calc(var(--global-container-width) * 1);
-    background-color: rgba(195, 35, 215, 0.5);
+    width: var(--global-container-width);
+    background-color: rgba(55, 115, 245, 0.5);
 }
 
-/* In case image utility would irritate your workflow: */
-/* .wrapper > .wrapper-row div[class*="col-"] {
-    border: 4px dashed red;
-  } */
+ .wrapper > .wrapper-row div[class*="col-"] {
+    display: inherit;
+    border: 2px dashed red;
+  }
 
+ .wrapper > .wrapper-row > div[class*="row-"] > div[class*="col-"] {
+   /*  grid-row: auto; */ /* might be required in the future [leave it for now] */
+   display: inherit;
+   justify-items: center;
+   align-items: center;
+  }
+  
+/* Header open : */
 .wrapper-row > .row-header {
     display: grid;
     width: inherit;
-    height: 722px;
+    height: var(--global-container-height);
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
 }
+/* Header close ; */
 
-img#row-header {
-    /* grid-row: 1 / 2; [implicit as default] */
-    background-image: url("./img/home-header1.png");
-    background-position: center;
-    position: absolute;
-    width: inherit;
-    height: inherit;
-    z-index: -999;
-    background-position-x: -130px;
-}
-
-.row-header > * {
-    display: inherit;
-    justify-content: space-evenly;
-}
-
-/* */
-
+/* Counter open :  */
 .wrapper-row > .row-header2  {
     display: grid; 
     width: inherit;
-    height: 312px;
+    height: calc(var(--global-container-height) /  2);
     grid-template-columns: repeat(4, 1fr);
 }
+/* Counter close ;  */
 
-img#row-header2 {
-    grid-row: 2 / 3;
-    background-image: url("./img/home-header2.png");
-    position: absolute;
-    width: inherit;
-    height: inherit;
-    z-index: -999;
-    background-position-x: -130px;
-}
-
-.row-header2 > * {
-    display: inherit;
-    justify-content: space-evenly;
-}
-
-/* */
-
+/* Features open : */
 .wrapper-row > .row-features {
     display: grid; 
     width: inherit;
-    height: 648px;
+    height: var(--global-container-height);
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
     "rhf-1-col12 rhf-1-col12 rhf-1-col12"
     "rhf-1-col4 rhf-2-col4 rhf-3-col4";
-}
-
-img#row-features {
-    grid-row: 3 / 4;
-    background-image: url("./img/home-features1.png");
-    position: absolute;
-    width: inherit;
-    height: inherit;
-    z-index: -999;
-    background-position-x: -130px;
 }
 
 .row-features > .col-12 {
@@ -126,84 +85,37 @@ img#row-features {
 .row-features > div.col-4:nth-of-type(3) {
     grid-area: rhf-3-col4;
 }
+/* Features close ; */
 
-.row-features > * {
-    display: inherit;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-/* */
-
+/* Device manage open : */
 .wrapper-row > .row-header3 {
     display: grid; 
     width: inherit;
-    height: 722px;
+    height: var(--global-container-height);
     grid-template-columns: repeat(2, 1fr);
 }
+/* Device manage close ; */
 
-img#row-header3 {
-    grid-row: 4 / 5;
-    background-image: url("./img/home-header3.png");
-    position: absolute;
-    width: inherit;
-    height: inherit;
-    z-index: -999;
-    background-position-x: -130px;
-}
-
-.row-header3 > * {
-    display: inherit;
-    justify-content: space-evenly;
-}
-
-/* */
-
+/* Device communicate open : */
 .wrapper-row > .row-header4 {
     display: grid; 
     width: inherit;
-    height: 722px;
+    height: var(--global-container-height);
     grid-template-columns: repeat(2, 1fr);
 }
+/* Device communicate close ; */
 
-img#row-header4 {
-    grid-row: 5 / 6;
-    background-image: url("./img/home-header4.png");
-    position: absolute;
-    width: inherit;
-    height: inherit;
-    z-index: -999;
-    background-position-x: -130px;
-}
-
-.row-header4 > * {
-    display: inherit;
-    justify-content: space-evenly;
-}
-
-/* */
-
+/* sApp work open : */
 .wrapper-row > .row-header5 {
     display: grid; 
     width: inherit;
-    height: 580px;
+    height: var(--global-container-height);
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
     "rh5-col12 rh5-col12 rh5-col12"
     "rh5-1-col4 rh5-2-col4 rh5-3-col4";
 }
-
-img#row-header5 {
-    grid-row: 6 / 7;
-    background-image: url("./img/home-header5.png");
-    position: absolute;
-    width: inherit;
-    height: inherit;
-    z-index: -999;
-    background-position-x: -130px;
-}
-
 .row-header5 > .col-12 {
     grid-area: rh5-col12;
 }
@@ -219,84 +131,36 @@ img#row-header5 {
 .row-header5 > div.col-4:nth-of-type(3) {
     grid-area: rh5-3-col4;
 }
+/* sApp work close ; */
 
-.row-header5 > * {
-    display: inherit;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-/* */
-
+/* Interface open : */
 .wrapper-row > .row-interface {
     display: grid; 
     width: inherit;
-    height: 380px;
+    height: calc(var(--global-container-height) / 2);
     grid-template-columns: 1fr;
 }
+/* Interface close ; */
 
-img#row-interface {
-    grid-row: 7 / 8;
-    background-image: url("./img/home-interface1.png");
-    position: absolute;
-    width: inherit;
-    height: inherit;
-    z-index: -999;
-    background-position-x: -130px;
-}
-
-.row-interface > .col-12.interface-col-12 {
-    display: inherit; 
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-/* */
-
+/* Slide open : */
 .wrapper-row > .row-slide {
     display: grid; 
     width: inherit;
-    height: 600px;
+    height: var(--global-container-height);
     grid-template-columns: 1fr;
 }
+/* Slide close ; */
 
-img#row-slide {
-    grid-row: 8 / 9;
-    background-image: url("./img/home-slider1.png");
-    position: absolute;
-    width: inherit;
-    height: inherit;
-    z-index: -999;
-    background-position-x: -130px;
-}
-
-.row-slide > .col-12.slide-col-12 {
-    display: inherit;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-/* */
-
+/* Our customers open : */
 .wrapper-row > .row-header6 {
     display: grid; 
     width: inherit;
-    height: 722px;
+    height: var(--global-container-height);
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
     "rh6-col12 rh6-col12 rh6-col12"
     "rh6-1-col4 rh6-2-col4 rh6-3-col4";
-}
-
-img#row-header6 {
-    grid-row: 9 / 10;
-    background-image: url("./img/home-our--customers.png");
-    position: absolute;
-    width: inherit;
-    height: inherit;
-    z-index: -999;
-    background-position-x: -130px;
 }
 
 .row-header6 > .col-12 {
@@ -314,35 +178,19 @@ img#row-header6 {
 .row-header6 > div.col-4:nth-of-type(3) {
     grid-area: rh6-3-col4;
 }
+/* Our customers close ; */
 
-.row-header6 > * {
-    display: inherit;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-/* */
-
+/* Plans open : */
 .wrapper-row > .row-header7 {
     display: grid; 
     width: inherit;
-    height: 962px;
+    height: var(--global-container-height);
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: 
     "rh7-top-12 rh7-top-12"
     "rh7-1-col-6 rh7-2-col-6"
     "rh7-bottom-12 rh7-bottom-12";
-}
-
-img#row-header7 {
-    grid-row: 10 / 11;
-    background-image: url("./img/home-unlock--app.png");
-    position: absolute;
-    width: inherit;
-    height: inherit;
-    z-index: -999;
-    background-position-x: -130px;
 }
 
 .row-header7 > .col-top-12 {
@@ -360,35 +208,19 @@ img#row-header7 {
 .row-header7 > .col-bottom-12 {
     grid-area: rh7-bottom-12;
 }
+/* Plans close ; */
 
-.row-header7 > * {
-    display: inherit;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-/* */
-
+/* FAQ open : */
 .wrapper-row > .row-header8 {
     display: grid; 
     width: inherit;
-    height: 900px;
+    height: var(--global-container-height);
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: 
     "rh8-top-12 rh8-top-12"
     "rh8-1-col-6 rh8-2-col-6"
     "rh8-bottom-12 rh8-bottom-12";
-}
-
-img#row-header8 {
-    grid-row: 11 / 12;
-    background-image: url("./img/home-faq.png");
-    position: absolute;
-    width: inherit;
-    height: inherit;
-    z-index: -999;
-    background-position-x: -130px;
 }
 
 .row-header8 > .col-top-12 {
@@ -406,34 +238,18 @@ img#row-header8 {
 .row-header8 > .col-bottom-12 {
     grid-area: rh8-bottom-12;
 }
+/* FAQ close ; */
 
-.row-header8 > * {
-    display: inherit;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-/* */
-
+/* Our Team Experts open : */
 .wrapper-row > .row-header9  {
     display: grid; 
     width: inherit;
-    height: 580px;
+    height: var(--global-container-height);
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
     "rh9-col12 rh9-col12 rh9-col12 rh9-col12"
     "rh9-1-col3 rh9-2-col3 rh9-3-col3 rh9-4-col3";
-}
-
-img#row-header9 {
-    grid-row: 12 / 13;
-    background-image: url("./img/home-our--experts.png");
-    position: absolute;
-    width: inherit;
-    height: inherit;
-    z-index: -999;
-    background-position-x: -130px;
 }
 
 .row-header9 > .col-12 {
@@ -455,85 +271,36 @@ img#row-header9 {
 .row-header9 > div.col-3:nth-of-type(4) {
     grid-area: rh9-4-col3;
 }
+/* Our Team Experts close ; */
 
-.row-header9 > * {
-    display: inherit;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-/* */
-
+/* sApp All Devices open : */
 .wrapper-row > .row-header10 {
     display: grid; 
     width: inherit;
-    height: 464px;
+    height: var(--global-container-height);
     grid-template-columns: 1fr;
 }
+/* sApp All Devices close ; */
 
-img#row-header10 {
-    grid-row: 13 / 14;
-    background-image: url("./img/home-devices.png");
-    position: absolute;
-    width: inherit;
-    height: inherit;
-    z-index: -999;
-    background-position-x: -130px;
-}
-
-.row-header10 > .col-12.header10-col-12 {
-    display: inherit;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-/* */
-
+/* Subscribe For Updates open : */
 .wrapper-row > .row-header11 {
     display: grid; 
     width: inherit;
-    height: 464px;
+    height: var(--global-container-height);
     grid-template-columns: 1fr;
 }
+/* Subscribe For Updates close ; */
 
-img#row-header11 {
-    grid-row: 14 / 15;
-    background-image: url("./img/home-subscribe.png");
-    position: absolute;
-    width: inherit;
-    height: inherit;
-    z-index: -999;
-    background-position-x: -130px;
-}
-
-.row-header11 > .col-12.header11-col-12 {
-    display: inherit;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-/* */
-
+/* Stay Tuned open : */
 .wrapper-row > .row-header12 {
     display: grid;
     width: inherit;
-    height: 722px;
+    height: var(--global-container-height);
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
     "rh12-col-12 rh12-col-12"
     "rh12-1-col-6 rh12-2-col-6";
-}
-
-img#row-header12 {
-    grid-row: 15 / 16;
-    background-image: url("./img/home-stay--tuned.png");
-    background-position: center;
-    position: absolute;
-    width: inherit;
-    height: inherit;
-    z-index: -999;
-    background-position-x: -130px;
 }
 
 .row-header12 > .col-12 {
@@ -547,33 +314,18 @@ img#row-header12 {
 .row-header12 > div.col-6:nth-of-type(2) {
     grid-area: rh12-2-col-6;
 }
+/* Stay Tuned close ; */
 
-.row-header12 > * {
-    display: inherit;
-    justify-content: space-evenly;
-}
-
-/* */
-
+/* Footer open : */
 .wrapper-row > .row-header13  {
     display: grid; 
     width: inherit;
-    height: 580px;
+    height: var(--global-container-height);
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
     "rh13-1-col3 rh13-2-col3 rh13-3-col3 rh13-4-col3"
     "rh13-col12 rh13-col12 rh13-col12 rh13-col12";
-}
-
-img#row-header13 {
-    grid-row: 16 / 17;
-    background-image: url("./img/home-footer.png");
-    position: absolute;
-    width: inherit;
-    height: inherit;
-    z-index: -999;
-    background-position-x: -130px;
 }
 
 .row-header13 > .col-12 {
@@ -595,14 +347,9 @@ img#row-header13 {
 .row-header13 > div.col-3:nth-of-type {
     grid-area: rh13-4-col3;
 }
+/* Footer close ; */
 
-.row-header13 > * {
-    display: inherit;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-/* Media queries: */
+/* Further do – @Media queries  : */
 /* imported via <link> at the very end of the <head> */
 
-/* End of the road */
+/* CUSTOME STYLE (HOME PAGE) CLOSE ; */

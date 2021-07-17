@@ -1,40 +1,23 @@
-/* [this is "fixer" for the screen of 1920px] */
-/* @media only screen and (min-width: 1537px) {
+/* [relatively largest logical resolution] */
+@media only screen and (max-width: 1920px) {
     .wrapper > .wrapper-row {
-    display: grid;
-    width: calc(var(--global-container-width) * 1.25); */ /*= 1800px */
-/*     }
-} */
-
-/* [reference point] */
-@media only screen and (max-width: 1536px) {
-    .wrapper > .wrapper-row {
-    display: grid;
-    width: calc(var(--global-container-width) * 1.00); /* = 1440px */
+    width: var(--global-container-width);
     }
 }
 
-@media only screen and (max-width: 1440px) {
+/* [the range in between relatively largest & smallest resolutions] */
+@media only screen and (max-width: var(--global-container-width)) {
     .wrapper > .wrapper-row {
-    display: grid;
-    width: calc(var(--global-container-width) * 0.75); /* = 1080px */
+    width: var(--global-container-width);
     }
 }
 
-@media only screen and (max-width: 1080px) {
+/* [relatively smallest logical resolution] */
+@media only screen and (max-width: 360px) {
     .wrapper > .wrapper-row {
-    display: grid;
-    width: calc(var(--global-container-width) * 0.5); /* = 720px */
-    }
-}
-
-@media only screen and (max-width: 720px) {
-    .wrapper > .wrapper-row {
-    display: grid;
-    width: calc(var(--global-container-width) * 0.25); /* = 360px */
+    width: var(--global-container-width);
     }
     .wrapper > .wrapper-row * {
-        grid-template-columns: 1fr;
         grid-template-columns: 1fr;
     }
 }
