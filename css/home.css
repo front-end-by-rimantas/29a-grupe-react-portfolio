@@ -9,13 +9,6 @@
 
 /* CUSTOME STYLE (HOME PAGE) OPEN : */
 
-body, body * {
-    padding: 0;
-    box-sizing: border-box;
-    margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 32px; font-weight: bold; color: black;
-}
-
 /* If not fluid container, good for centering [might be useful in the future] */
 /* .wrapper {
     display: flex;
@@ -25,32 +18,79 @@ body, body * {
 .wrapper > .wrapper-row {
     display: grid;
     width: var(--global-container-width);
-    background-color: rgba(55, 115, 245, 0.5);
 }
 
- .wrapper > .wrapper-row div[class*="col-"] {
+.wrapper > .wrapper-row div[class*="col-"] {
     border: 2px dashed red; /* helper */
-  }
+}
 
-  .wrapper > .wrapper-row > div[class*="row-"] {
-      height: auto; /* CRUCIAL LINE [DO NOT REMOVE] : IT AUTOMATICALLY ADJUST PARENT CONTAINER HEIGHT TO CHILDREN CONTENT */
-  }
+.wrapper > .wrapper-row > div[class*="row-"] { /* EACH PARENT CONTAINER SELECTOR STARTING row- e.g. row-header : */
+    height: auto; /* CRUCIAL LINE [DO NOT REMOVE] : IT AUTOMATICALLY ADJUST PARENT CONTAINER HEIGHT TO CHILDREN CONTENT */
+}
 
- .wrapper > .wrapper-row > div[class*="row-"] > div[class*="col-"] {
-   display: inherit;
-   justify-items: center;
-   align-items: center;
-  }
-  
 /* Header open : */
 .wrapper-row > .row-header {
     display: grid;
+    position: relative;
     width: inherit;
+    height: 100vh;
+    padding: 200px;
     grid-template-columns: repeat(2, 1fr);
+    background: rgba(0, 0, 0, 0) url("./img/header-1.jpg") no-repeat scroll center center / cover;
+}
+
+.wrapper-row > .row-header > img#color-overlay {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(-47deg, #8731E8 0%, rgba(69, 40, 220, 0.88) 100%);
+}
+
+.wrapper-row > .row-header > * > p {
+    color: white;
+    /* margin-top: 50px; */
+}
+
+.wrapper-row > .row-header > * > a {
+    color: black;
+    /* margin-top: 50px; */
+}
+
+.wrapper > .wrapper-row > .row-header > div[class*="col-"] {
+    border: 0; /* helper */
+}
+
+a.global-btn.header {
+    display: inline-block;
+    width: fit-content;
+    background-color: yellow;
+    justify-self: left;
+}
+
+.wrapper-row > .row-header > * { /* ALL THE TEXT (HOME PAGE) */
+    color: white;
+    display: grid;
+    z-index: 1;
+}
+
+div.shape-bottom {
+    transform: rotate(180deg);
+    position: absolute;
+    top: auto;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+}
+
+div.row-header > div.col-6.header-form {
+    justify-items: center;
+    align-items: center;
 }
 /* Header close ; */
 
-/* Counter open :  */
+/* Express open :  */
 .wrapper-row > .row-header2 {
     display: grid; 
     width: inherit;
@@ -59,18 +99,13 @@ body, body * {
     grid-template-areas: 
     "rh2-col12 rh2-col12 rh2-col12"
     "rh2-1-col3 rh2-2-col3 rh2-3-col3";
+    background-color: white;
 }
 
 .row-header2 > .col-12 {
     grid-area: rh2-col12;
     justify-content: left;
 }
-
-/* .wrapper > .wrapper-row > div[class*="row-"] > .col-12 {
-    display: inherit;
-    justify-items: start;
-    align-items: center;
-} */
 
 .row-header2 > div.col-3:nth-of-type(2) {
     grid-area: rh2-1-col3;
@@ -83,7 +118,7 @@ body, body * {
 .row-header2 > div.col-3:nth-of-type(4) {
     grid-area: rh2-3-col3;
 }
-/* Counter close ;  */
+/* Express close ;  */
 
 /* Device manage open : */
 .wrapper-row > .row-header3 {
