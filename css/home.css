@@ -13,7 +13,7 @@ body, body * {
     padding: 0;
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 48px; font-weight: bold; color: red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 32px; font-weight: bold; color: black;
 }
 
 /* If not fluid container, good for centering [might be useful in the future] */
@@ -29,12 +29,14 @@ body, body * {
 }
 
  .wrapper > .wrapper-row div[class*="col-"] {
-    display: inherit;
-    border: 2px dashed red;
+    border: 2px dashed red; /* helper */
+  }
+
+  .wrapper > .wrapper-row > div[class*="row-"] {
+      height: auto; /* CRUCIAL LINE [DO NOT REMOVE] : IT DOES HELP TO ADJUST PARENT CONTAINER HEIGHT TO CHILDREN CONTENT */
   }
 
  .wrapper > .wrapper-row > div[class*="row-"] > div[class*="col-"] {
-   /*  grid-row: auto; */ /* might be required in the future [leave it for now] */
    display: inherit;
    justify-items: center;
    align-items: center;
@@ -50,42 +52,40 @@ body, body * {
 /* Header close ; */
 
 /* Counter open :  */
-.wrapper-row > .row-header2  {
-    display: grid; 
-    width: inherit;
-    height: calc(var(--global-container-height) /  2);
-    grid-template-columns: repeat(4, 1fr);
-}
-/* Counter close ;  */
-
-/* Features open : */
-.wrapper-row > .row-features {
+.wrapper-row > .row-header2 {
     display: grid; 
     width: inherit;
     height: var(--global-container-height);
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
-    "rhf-1-col12 rhf-1-col12 rhf-1-col12"
-    "rhf-1-col4 rhf-2-col4 rhf-3-col4";
+    "rh2-col12 rh2-col12 rh2-col12"
+    "rh2-1-col3 rh2-2-col3 rh2-3-col3";
 }
 
-.row-features > .col-12 {
-    grid-area: rhf-1-col12;
+.row-header2 > .col-12 {
+    grid-area: rh2-col12;
+    justify-content: left;
 }
 
-.row-features > div.col-4:nth-of-type(1) {
-    grid-area: rhf-1-col4;
+/* .wrapper > .wrapper-row > div[class*="row-"] > .col-12 {
+    display: inherit;
+    justify-items: start;
+    align-items: center;
+} */
+
+.row-header2 > div.col-3:nth-of-type(2) {
+    grid-area: rh2-1-col3;
 }
 
-.row-features > div.col-4:nth-of-type(2) {
-    grid-area: rhf-2-col4;
+.row-header2 > div.col-3:nth-of-type(3) {
+    grid-area: rh2-2-col3;
 }
 
-.row-features > div.col-4:nth-of-type(3) {
-    grid-area: rhf-3-col4;
+.row-header2 > div.col-3:nth-of-type(4) {
+    grid-area: rh2-3-col3;
 }
-/* Features close ; */
+/* Counter close ;  */
 
 /* Device manage open : */
 .wrapper-row > .row-header3 {
@@ -133,15 +133,6 @@ body, body * {
 }
 /* sApp work close ; */
 
-/* Interface open : */
-.wrapper-row > .row-interface {
-    display: grid; 
-    width: inherit;
-    height: calc(var(--global-container-height) / 2);
-    grid-template-columns: 1fr;
-}
-/* Interface close ; */
-
 /* Slide open : */
 .wrapper-row > .row-slide {
     display: grid; 
@@ -150,35 +141,6 @@ body, body * {
     grid-template-columns: 1fr;
 }
 /* Slide close ; */
-
-/* Our customers open : */
-.wrapper-row > .row-header6 {
-    display: grid; 
-    width: inherit;
-    height: var(--global-container-height);
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: 
-    "rh6-col12 rh6-col12 rh6-col12"
-    "rh6-1-col4 rh6-2-col4 rh6-3-col4";
-}
-
-.row-header6 > .col-12 {
-    grid-area: rh6-col12;
-}
-
-.row-header6 > div.col-4:nth-of-type(1) {
-    grid-area: rh6-1-col4;
-}
-
-.row-header6 > div.col-4:nth-of-type(2) {
-    grid-area: rh6-2-col4;
-}
-
-.row-header6 > div.col-4:nth-of-type(3) {
-    grid-area: rh6-3-col4;
-}
-/* Our customers close ; */
 
 /* Plans open : */
 .wrapper-row > .row-header7 {
@@ -195,6 +157,8 @@ body, body * {
 
 .row-header7 > .col-top-12 {
     grid-area: rh7-top-12;
+    text-align: center;
+    justify-content: center;
 }
 
 .row-header7 > div.col-6:nth-of-type(1) {
