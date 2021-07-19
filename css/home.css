@@ -46,7 +46,6 @@ body, body * {
 .wrapper-row > .row-header {
     display: grid;
     width: inherit;
-    height: var(--global-container-height);
     grid-template-columns: repeat(2, 1fr);
 }
 /* Header close ; */
@@ -55,7 +54,6 @@ body, body * {
 .wrapper-row > .row-header2 {
     display: grid; 
     width: inherit;
-    height: var(--global-container-height);
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
@@ -91,7 +89,6 @@ body, body * {
 .wrapper-row > .row-header3 {
     display: grid; 
     width: inherit;
-    height: var(--global-container-height);
     grid-template-columns: repeat(2, 1fr);
 }
 /* Device manage close ; */
@@ -100,7 +97,6 @@ body, body * {
 .wrapper-row > .row-header4 {
     display: grid; 
     width: inherit;
-    height: var(--global-container-height);
     grid-template-columns: repeat(2, 1fr);
 }
 /* Device communicate close ; */
@@ -109,7 +105,6 @@ body, body * {
 .wrapper-row > .row-header5 {
     display: grid; 
     width: inherit;
-    height: var(--global-container-height);
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
@@ -137,7 +132,6 @@ body, body * {
 .wrapper-row > .row-slide {
     display: grid; 
     width: inherit;
-    height: var(--global-container-height);
     grid-template-columns: 1fr;
 }
 /* Slide close ; */
@@ -146,7 +140,6 @@ body, body * {
 .wrapper-row > .row-header7 {
     display: grid; 
     width: inherit;
-    height: var(--global-container-height);
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: 
@@ -178,7 +171,6 @@ body, body * {
 .wrapper-row > .row-header8 {
     display: grid; 
     width: inherit;
-    height: var(--global-container-height);
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: 
@@ -208,7 +200,6 @@ body, body * {
 .wrapper-row > .row-header9  {
     display: grid; 
     width: inherit;
-    height: var(--global-container-height);
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
@@ -241,7 +232,6 @@ body, body * {
 .wrapper-row > .row-header10 {
     display: grid; 
     width: inherit;
-    height: var(--global-container-height);
     grid-template-columns: 1fr;
 }
 /* sApp All Devices close ; */
@@ -250,7 +240,6 @@ body, body * {
 .wrapper-row > .row-header11 {
     display: grid; 
     width: inherit;
-    height: var(--global-container-height);
     grid-template-columns: 1fr;
 }
 /* Subscribe For Updates close ; */
@@ -259,7 +248,6 @@ body, body * {
 .wrapper-row > .row-header12 {
     display: grid;
     width: inherit;
-    height: var(--global-container-height);
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
@@ -284,7 +272,6 @@ body, body * {
 .wrapper-row > .row-header13  {
     display: grid; 
     width: inherit;
-    height: var(--global-container-height);
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas:

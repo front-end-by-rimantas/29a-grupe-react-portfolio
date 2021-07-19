@@ -2,6 +2,4 @@
     /* calc (window.clientWidth) excluding vertical bar, instead of box-like container e.g. as former of 1440px */
     --global-container-width: calc(100vw - (100vw - 100%));
  /* --boxed-container-width: <numeric-value>px; e.g. where as <numeric-value> == 1440px  */
-    
-    --global-container-height: 100vh;
 }
