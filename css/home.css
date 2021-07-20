@@ -1,6 +1,7 @@
 /* Base : */
 @import './base/reset.css';
 @import './base/variables.css'; /* :root{} comes from this part ; */
+@import './base/global-form.css';
 
 /* 3rd-party : */
 
@@ -24,17 +25,19 @@
     border: 2px dashed red; /* helper */
 }
 
-.wrapper > .wrapper-row > div[class*="row-"] { /* EACH PARENT CONTAINER SELECTOR STARTING row- e.g. row-header : */
+.wrapper > .wrapper-row > div[class*="row-"] {
     height: auto; /* CRUCIAL LINE [DO NOT REMOVE] : IT AUTOMATICALLY ADJUST PARENT CONTAINER HEIGHT TO CHILDREN CONTENT */
+    padding: 0 200px;
 }
 
 /* Header open : */
 .wrapper-row > .row-header {
     display: grid;
+    column-gap: 64px;
     position: relative;
     width: inherit;
     height: 100vh;
-    padding: 200px;
+    padding: 200px !important;
     grid-template-columns: repeat(2, 1fr);
     background: rgba(0, 0, 0, 0) url("./img/header-1.jpg") no-repeat scroll center center / cover;
 }
@@ -48,25 +51,33 @@
     background-image: linear-gradient(-47deg, #8731E8 0%, rgba(69, 40, 220, 0.88) 100%);
 }
 
-.wrapper-row > .row-header > * > p {
-    color: white;
-    /* margin-top: 50px; */
+
+.wrapper-row > .row-header > .header-text {
+    /* max-height: 330px; */
+    row-gap: 30px;
+    align-self: center;
 }
 
-.wrapper-row > .row-header > * > a {
+.wrapper-row > .row-header h1, p {
+    color: white;
+}
+
+.wrapper-row > .row-header a {
     color: black;
-    /* margin-top: 50px; */
 }
 
 .wrapper > .wrapper-row > .row-header > div[class*="col-"] {
-    border: 0; /* helper */
+    border: 0 !important; /* helper */
 }
 
 a.global-btn.header {
-    display: inline-block;
     width: fit-content;
-    background-color: yellow;
     justify-self: left;
+    padding: 16px 32px;
+    font-size: 16px !important;
+    border-radius: 999px;
+    text-transform: uppercase;
+    background: white;
 }
 
 .wrapper-row > .row-header > * { /* ALL THE TEXT (HOME PAGE) */
