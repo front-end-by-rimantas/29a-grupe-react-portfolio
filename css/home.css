@@ -85,13 +85,29 @@ body, body * {
 }
 /* Counter close ;  */
 
-/* Device manage open : */
+/* Easily communicate with clients START : */
 .wrapper-row > .row-header3 {
     display: grid; 
     width: inherit;
     grid-template-columns: repeat(2, 1fr);
 }
-/* Device manage close ; */
+.eCommunicate-div {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.sector3-div {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    align-items:center;
+}
+.sector3-div > .fa {
+    color: #764fe0;
+    font-size: 14px;
+    padding-left: 0;
+    padding-right: 0.5rem;
+}
+/* Easily communicate with clients END ; */
 
 /* Device communicate open : */
 .wrapper-row > .row-header4 {
