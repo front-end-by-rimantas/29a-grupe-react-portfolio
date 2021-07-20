@@ -99,9 +99,11 @@ body, body * {
     display: grid; 
     width: inherit;
     grid-template-columns: repeat(2, 1fr);
-    
+    background-color: white;
 }
-
+body > div > div > div.row-header4 > div:nth-child(2) {
+    background-color: white;
+}
 /* Make your device manage everythin section END ; */
 
 /* sApp work open : */
