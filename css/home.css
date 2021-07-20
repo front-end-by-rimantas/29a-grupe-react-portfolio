@@ -85,21 +85,24 @@ body, body * {
 }
 /* Counter close ;  */
 
-/* Device manage open : */
+/* Easily communicate with clients START : */
 .wrapper-row > .row-header3 {
     display: grid; 
     width: inherit;
     grid-template-columns: repeat(2, 1fr);
+    
 }
-/* Device manage close ; */
+/* Easily communicate with clients END ; */
 
-/* Device communicate open : */
+/* Make your device manage everythin section START : */
 .wrapper-row > .row-header4 {
     display: grid; 
     width: inherit;
     grid-template-columns: repeat(2, 1fr);
+    
 }
-/* Device communicate close ; */
+
+/* Make your device manage everythin section END ; */
 
 /* sApp work open : */
 .wrapper-row > .row-header5 {
