@@ -118,6 +118,14 @@ body, body * {
     height: 0;
 }
 
+.border-3x2 {
+    border: 1px solid #dfd6d6;
+    box-shadow: 4px 4px 15px #dfd6d6;
+    border-radius: 25px;
+    margin: 20px;
+    padding: 30px;
+}
+
 /* express functionality: close ;  */
 
 /* Easily communicate with clients START : */
