@@ -50,7 +50,7 @@ body, body * {
 }
 /* Header close ; */
 
-/* Counter open :  */
+/* express functionality : open */
 .wrapper-row > .row-header2 {
     display: grid; 
     width: inherit;
@@ -59,6 +59,7 @@ body, body * {
     grid-template-areas: 
     "rh2-col12 rh2-col12 rh2-col12"
     "rh2-1-col3 rh2-2-col3 rh2-3-col3";
+    background-color: white;
 }
 
 .row-header2 > .col-12 {
@@ -83,7 +84,41 @@ body, body * {
 .row-header2 > div.col-3:nth-of-type(4) {
     grid-area: rh2-3-col3;
 }
-/* Counter close ;  */
+
+.express {
+    align-content: left;
+}
+
+.premium-border {
+    width: 300px;
+    border-radius: 25px;
+    border: 1px solid #f6f6f6;
+    padding: 0;
+    margin: 0;
+    box-shadow: 1px 5px 5px #dfd6d6;
+    padding: 5px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.premium-border > span {
+    color: #8961e3;
+    font-family: sans-serif;
+    font-weight: 100;
+
+}
+
+.hor-line {
+    border: 3px solid #8961e3;
+    width: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #8961e3;
+    height: 0;
+}
+
+/* express functionality: close ;  */
 
 /* Easily communicate with clients START : */
 .wrapper-row > .row-header3 {
