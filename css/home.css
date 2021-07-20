@@ -34,7 +34,8 @@ body, body * {
 
   .wrapper > .wrapper-row > div[class*="row-"] {
       height: auto; /* CRUCIAL LINE [DO NOT REMOVE] : IT AUTOMATICALLY ADJUST PARENT CONTAINER HEIGHT TO CHILDREN CONTENT */
-  }
+      padding: 0 200px;  
+}
 
  .wrapper > .wrapper-row > div[class*="row-"] > div[class*="col-"] {
    display: inherit;
