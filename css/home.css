@@ -250,9 +250,7 @@ div.row-header > div.col-6.header-form {
     font-size: 40px;
     line-height: 1.3;
     color: #222;
-    
     margin-bottom: 0px;
-    
 }
 .service-list {
     margin-top: 20px;
@@ -406,6 +404,8 @@ div.row-header > div.col-6.header-form {
 .row-header8 > .col-bottom-12 {
     grid-area: rh8-bottom-12;
 }
+
+
 /* FAQ close ; */
 
 /* Our Team Experts open : */
