@@ -188,6 +188,10 @@ div.row-header > div.col-6.header-form {
     width: inherit;
     grid-template-columns: repeat(2, 1fr);
 }
+.img-phone2 {
+    max-width: 100%;
+    padding: 15px;
+}
 .eCommunicate-div {
     padding-left: 15px;
     padding-right: 15px;
