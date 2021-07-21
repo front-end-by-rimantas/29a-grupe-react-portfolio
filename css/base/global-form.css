@@ -1,6 +1,6 @@
 .global-form {
     display: grid;
-    max-width: 450px;
+    max-width: 450px; /* instead of width: 450px; which complicates RWD */
     height: 530px;
     padding: 50px;
     border-radius: 8px;

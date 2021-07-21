@@ -19,10 +19,15 @@
 .wrapper > .wrapper-row {
     display: grid;
     width: var(--global-container-width);
+    position: relative;
 }
 
 .wrapper > .wrapper-row div[class*="col-"] {
     border: 2px dashed red; /* helper */
+}
+
+.wrapper > .wrapper-row > .row-header div[class*="col-"] {
+    border: 0 !important; /* helper */
 }
 
 .wrapper > .wrapper-row > div[class*="row-"] {
@@ -31,15 +36,40 @@
 }
 
 /* Header open : */
+nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 0 200px;
+    background-color: transparent;
+    /* [WILL BE USED LATER]
+    position: sticky;
+    top: 0px; 
+    */
+    z-index: 2; /* [MUST STAY AS IS] */
+}
+
+/* nav > .nav-logo {
+    background-color: yellow;
+}
+
+nav > .nav-menu {
+    background-color: blue;
+} */
+
 .wrapper-row > .row-header {
     display: grid;
-    column-gap: 64px;
+    column-gap: auto;
     position: relative;
     width: inherit;
-    height: 100vh;
-    padding: 200px !important;
-    grid-template-columns: repeat(2, 1fr);
-    background: rgba(0, 0, 0, 0) url("./img/header-1.jpg") no-repeat scroll center center / cover;
+    /* height: 100vh; */
+    padding: 56px 200px 100px 200px !important;
+    grid-template-columns: 54% 46%;
+    background: rgba(0, 0, 0, 0) url("../img/header-1.jpg") no-repeat scroll center center / cover;
 }
 
 .wrapper-row > .row-header > img#color-overlay {
@@ -67,7 +97,7 @@
 }
 
 .wrapper > .wrapper-row > .row-header > div[class*="col-"] {
-    border: 0 !important; /* helper */
+    /* border: 0 !important; */ /* helper */
 }
 
 a.global-btn.header {
