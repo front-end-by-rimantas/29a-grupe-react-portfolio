@@ -232,6 +232,9 @@ body > div > div > div.row-header4 > div:nth-child(2) {
     padding-bottom: 22px;
 }
 
+.btn-link {
+    text-decoration: none;
+}
 /*  icons tik mano daliai, veliau reiketu optimizuoti, nes yra pasikartojanciu per visa dizaina*/
 .fa-database {
     color: #7c4fe0;
