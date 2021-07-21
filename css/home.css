@@ -192,6 +192,9 @@ div.row-header > div.col-6.header-form {
     max-width: 100%;
     padding: 15px;
 }
+.background-sector3 {
+    background: #f6f9fe;
+}
 .eCommunicate-div {
     padding-left: 15px;
     padding-right: 15px;
