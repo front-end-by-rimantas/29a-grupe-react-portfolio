@@ -39,7 +39,7 @@
     height: 100vh;
     padding: 200px !important;
     grid-template-columns: repeat(2, 1fr);
-    background: rgba(0, 0, 0, 0) url("./img/header-1.jpg") no-repeat scroll center center / cover;
+    background: rgba(0, 0, 0, 0) url("../img/header-1.jpg") no-repeat scroll center center / cover;
 }
 
 .wrapper-row > .row-header > img#color-overlay {
