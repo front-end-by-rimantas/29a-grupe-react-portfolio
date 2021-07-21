@@ -230,20 +230,25 @@ div.row-header > div.col-6.header-form {
     grid-template-columns: repeat(2, 1fr);
     background-color: white;
 }
-body > div > div > div.row-header4 > div:nth-child(2) {
-    background-color: white;
+
+.phone-img-sector {
+    display: inline-block;
+    text-align: center;
+    padding: 50px;
+}
+.text-icons-link-section {
+    padding: 50px;
 }
 .row-header4 > div:nth-child(1) > h1 {
     font-size: 40px;
     line-height: 1.3;
     color: #222;
-    margin-left: 50px;
+    
     margin-bottom: 0px;
     
 }
 .service-list {
-    margin-left: 50px;
-    margin-top: 0px;
+    margin-top: 20px;
 }
 .ul-items {
     padding-bottom: 22px;
@@ -251,6 +256,7 @@ body > div > div > div.row-header4 > div:nth-child(2) {
 
 .btn-link {
     text-decoration: none;
+    margin-top: 20px;
 }
 /*  icons tik mano daliai, veliau reiketu optimizuoti, nes yra pasikartojanciu per visa dizaina*/
 .fa-database {
