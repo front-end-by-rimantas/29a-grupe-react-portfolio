@@ -433,7 +433,7 @@ div.row-header > div.col-6.header-form {
 }
 /* Slide close ; */
 
-/* Plans open : */
+/* Unlock Full Power Of sApp OPEN: */
 .wrapper-row > .row-header7 {
     display: grid; 
     width: inherit;
@@ -462,7 +462,22 @@ div.row-header > div.col-6.header-form {
 .row-header7 > .col-bottom-12 {
     grid-area: rh7-bottom-12;
 }
-/* Plans close ; */
+.sector8-center {
+    justify-self: center;
+    text-align: center;
+}
+
+.sector8-line {
+    border: 1px solid #8961e3;
+    width: 70px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    margin-left: 46%;
+}
+
+
+
+/* Unlock Full Power Of sApp CLOSE ; */
 
 /* FAQ open : */
 .wrapper-row > .row-header8 {
