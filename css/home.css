@@ -433,7 +433,7 @@ div.row-header > div.col-6.header-form {
 }
 /* Slide close ; */
 
-/* Plans open : */
+/* Unlock Full Power Of sApp OPEN: */
 .wrapper-row > .row-header7 {
     display: grid; 
     width: inherit;
@@ -462,7 +462,22 @@ div.row-header > div.col-6.header-form {
 .row-header7 > .col-bottom-12 {
     grid-area: rh7-bottom-12;
 }
-/* Plans close ; */
+.sector8-center {
+    justify-self: center;
+    text-align: center;
+}
+
+.sector8-line {
+    border: 1px solid #8961e3;
+    width: 70px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    margin-left: 46%;
+}
+
+
+
+/* Unlock Full Power Of sApp CLOSE ; */
 
 /* FAQ open : */
 .wrapper-row > .row-header8 {
@@ -619,6 +634,55 @@ body > div > div > div.row-header8 > div.col-bottom-12 > div:nth-child(1) > p {
     width: inherit;
     grid-template-columns: 1fr;
 }
+div.row-header11 > div {
+    padding: 10px;
+    background: url("../img/subscribe-us-section/subscribe-bg.png") no-repeat scroll center center / cover;
+    background-size: 100%;
+}
+.subscribe {
+    display: inline-block;
+    text-align: center;
+    width: 40%;
+    
+}
+div.row-header11 > div > div > h1 {
+    font-size: 40px;
+    line-height: 1.3;
+    color: #222;
+    margin-top: 30px;
+    
+}
+div.row-header11 > div > div > p {
+    font-size: 16px;
+    font-weight: 400; 
+    line-height: 1.3;
+    color: black;
+    margin: 24px 0px;
+}
+body > div > div > div.row-header11 > div {
+    display: inline-block;
+    text-align: center;
+}
+.subscribe-input {
+    display: inline-block;
+    width: 100%;
+    font-size: 16px;
+    height: 60px;
+    text-align: center;
+    box-shadow:  0 5px 10px rgb(0 0 0 / 10%);
+    outline: none;
+    border: none;
+    border-radius: 8px;
+}
+.subscribe-btn {
+    display: inline-block;
+    width: 100%;
+    margin: 24px 0px;
+}
+
+
+
+
 /* Subscribe For Updates close ; */
 
 /* Stay Tuned open : */
