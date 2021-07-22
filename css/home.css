@@ -22,7 +22,7 @@
 }
 
 .wrapper > .wrapper-row div[class*="col-"] {
-    border: 2px dashed red; /* helper */
+    /* border: 2px dashed red; */ /* helper */
 }
 
 .wrapper > .wrapper-row > .row-header div[class*="col-"] {
@@ -62,6 +62,10 @@ div.nav > .nav-menu {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     column-gap: 30px;
+}
+
+div.nav > .nav-menu > div {
+    color: white;
 }
 
 .wrapper-row > .row-header {
@@ -502,7 +506,7 @@ div.row-header > div.col-6.header-form {
     grid-area: rh7-bottom-12;
 }
 .sector8-center {
-    justify-self: center;
+    justify-items: center;
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
 }

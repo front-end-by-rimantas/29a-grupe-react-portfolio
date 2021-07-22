@@ -1,8 +1,11 @@
 .global-form {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     max-width: 450px; /* instead of width: 450px; which complicates RWD */
     height: 530px;
     padding: 50px;
+    row-gap: 10px;
     border-radius: 8px;
     background-color: white;
 }
@@ -10,6 +13,11 @@
 .global-form * {
     width: 100%;
     text-align: center;
+}
+
+input.subscribe-input {
+    text-align: left;
+    padding-left: 20px;
 }
 
 .global-form button#save-btn {
