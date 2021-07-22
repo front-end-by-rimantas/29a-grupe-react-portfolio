@@ -15,32 +15,29 @@
     flex-direction: row;
     justify-content: center;
     width: var(--global-container-width); /* window.clientWidth */
-    height: 800px; /* = 800px */
-    background: rgba(0, 0, 0, 0) url("../img/header-1.jpg") no-repeat scroll center center / cover;
-    z-index: 1;
-    position: relative;
+    min-height: 100vh; /* otherwise some strict numeric value e.g. 800px */
 }
 
 .wrapper > .wrapper-row {
-    display: grid;
+    display: inherit;
+    justify-content: inherit;
     width: inherit;
-    height: inherit; /* = 800px */
-    /* background-color: aquamarine; */
-    border: 2px dashed red;
+    background: rgba(0, 0, 0, 0) url("../img/header-1.jpg") no-repeat scroll center center / cover;
+    z-index: 1;
 }
 
 .wrapper > .wrapper-row > .row-header {
-    /* position: relative; */
-    width: var(--inner-container-width); /* = 100% of .wrapper.row width */
-    height: auto/* inherit */; /* = 800px */
-/*     border: 2px dashed green; */
+    position: relative;
+    display: inherit;
+    width: var(--global-container-width) /* var(--inner-container-width) */; /* change between to see the difference */
+    height: auto; /* from now on .row-header children will state rules of height the .row-header have to adjust to */
+    border: 2px dashed red;
 }
 
-.wrapper > .wrapper-row > .row-header img#color-overlay {
+.wrapper-row > .row-header > img#color-overlay {
+    width: 100%;
+    height: 100%; /* = 100% of 100vh of the screen : it presumably inherits not dirrectly from .row-header as it auto, but from .wrapper-row  */
     position: absolute;
     top: 0;
-    width: 100%; /* = 100% of var(--inner-container-width); */
-    height: 100%; /* = 100% of 800px */
-    /* border: 2px dashed lightgray; */
     background-image: linear-gradient(-47deg, #8731E8 0%, rgba(69, 40, 220, 0.88) 100%);
 }
