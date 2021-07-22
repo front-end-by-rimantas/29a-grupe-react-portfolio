@@ -558,6 +558,17 @@ body > div > div > div.row-header8 > div:nth-child(3) > div > p:nth-child(6) {
     color: #222;
     font-size: 14px;
 }
+body > div > div > div.row-header8 > div.col-bottom-12 > div:nth-child(1) > p {
+    padding: 10px;
+    color: #222;
+    font-size: 14px;
+    margin-left: 33%;
+}
+.tell-us {
+    padding: 10px;
+    color: #222;
+    font-size: 14px;
+}
 
 /* FAQ close ; */
 
