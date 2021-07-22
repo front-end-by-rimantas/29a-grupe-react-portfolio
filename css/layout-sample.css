@@ -1,0 +1,23 @@
+/* [relatively largest logical resolution] */
+@media only screen and (max-width: 1920px) {
+    .wrapper > .wrapper-row {
+    width: var(--global-container-width);
+    }
+}
+
+/* [the range in between relatively largest & smallest resolutions] */
+@media only screen and (max-width: var(--global-container-width)) {
+    .wrapper > .wrapper-row {
+    width: var(--global-container-width);
+    }
+}
+
+/* [relatively smallest logical resolution] */
+@media only screen and (max-width: 360px) {
+    .wrapper > .wrapper-row {
+    width: var(--global-container-width);
+    }
+    .wrapper > .wrapper-row * {
+        grid-template-columns: 1fr;
+    }
+}

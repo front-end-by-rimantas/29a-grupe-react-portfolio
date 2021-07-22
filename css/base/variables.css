@@ -1,6 +1,7 @@
 :root{
-    /* calc (window.clientWidth) excluding vertical bar, instead of box-like container e.g. as former of 1440px */
     --global-container-width: calc(100vw - (100vw - 100%));
- /* --boxed-container-width: <numeric-value>px; e.g. where as <numeric-value> == 1440px  */
+    --global-container-padding: 0 200px;
+    --global-container-padding-left: 200px;
+    --inner-container-width: calc( var(--global-container-width) - ( var(--global-container-padding-left) * 2 ) ); /* between helper lines */
     --primary-btn-background: linear-gradient(-47deg, #8731E8 0%, #4528DC 100%);
 }
