@@ -467,6 +467,7 @@ div.row-header > div.col-6.header-form {
 /* FAQ open : */
 .wrapper-row > .row-header8 {
     display: grid; 
+    max-height: 300px;
     width: inherit;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
