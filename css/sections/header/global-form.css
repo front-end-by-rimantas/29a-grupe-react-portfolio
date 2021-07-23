@@ -16,15 +16,33 @@
 
 .global-form > .form-row > input {
     font-size: 16px;
-    height: 60px;
     text-align: left;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    height: 50px;
+    padding: 0 15px;
     outline: none;
     border: none;
-    border-radius: 8px;
+    border-radius: 4px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+aside.right-column > form > h1 {
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 1.5px;
+}
+
+aside.right-column > form > p {
+    font-weight: 200;
+    color: grey;
 }
 
 .global-form button#save-btn {
     color: white;
     background: linear-gradient(-47deg, #8731E8 0%, rgba(69, 40, 220, 0.88) 100%);
+}
+
+body > div > div > aside.right-column > form > div:last-of-type >  p:last-of-type , u {
+    font-size: 14px;
+    font-weight: 200;
+    color: grey;
 }

@@ -12,6 +12,7 @@
     }
 }
 
+/* [specific breakpoint] */
 @media only screen and (max-width: 992px) {
     .wrapper-row {
     width: var(--global-container-width);
@@ -19,25 +20,16 @@
     .wrapper-row > .row-header { /* all the other should .row- would have default grid-template-columns: as repeat(2, 1fr)  */
         display: grid;
         grid-template-columns: 1fr;
+        width: var(--global-container-width);
         grid-template-areas: 
         "rh-nav"
         "rh-aside-1"
         "rh-aside-2";
     }
-}
-
-/* [relatively smallest logical resolution] */
-@media only screen and (max-width: 768px) {
-    .wrapper-row {
-    width: var(--global-container-width);
+    nav .nav-menu {
+        display: none; /* instead do burger */
     }
-    .wrapper-row > .row-header { /* all the other should .row- would have default grid-template-columns: as repeat(2, 1fr)  */
-        display: grid;
-        grid-template-columns: 1fr;
-        width: var(--global-container-width); /* at 7680px and lower .header-row has no more global padding extracted from variables.css  */
-        grid-template-areas: 
-        "rh-nav"
-        "rh-aside-1"
-        "rh-aside-2";
+    .global-form {
+        margin-top: 50px;
     }
 }

@@ -1,7 +1,6 @@
 /* Base : */
 @import './base/reset.css';
 @import './base/variables.css'; /* :root{} comes from this part ; */
-@import './base/global-form.css';
 
 /* 3rd-party : */
 
@@ -10,6 +9,7 @@
 
 /* CUSTOME STYLE (HOME PAGE) OPEN : */
 
-@import './sections/header.css';
+@import './sections/header/header.css';
+@import './sections/header/global-form.css';
 
 /* CUSTOME STYLE (HOME PAGE) CLOSE ; */

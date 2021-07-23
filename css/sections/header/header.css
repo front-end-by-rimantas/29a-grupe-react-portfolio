@@ -4,11 +4,11 @@
     position: relative;
     width: var(--global-container-width); /* window.clientWidth i.e. user-agent viewport width excluding scrollbar */
     min-height: 800px;
-    background: rgba(0, 0, 0, 0) url("../../img/header-1.jpg") no-repeat scroll center center / cover;
+    background: rgba(0, 0, 0, 0) url("../../../img/header-1.jpg") no-repeat scroll center center / cover;
     z-index: 0;
 }
 
-.wrapper-row, .wrapper-row > * {
+.wrapper-row, .wrapper-row * {
     height: auto; /* CRUCIAL LINE [DO NOT REMOVE] : IT AUTOMATICALLY ADJUST PARENT CONTAINER HEIGHT TO CHILDREN CONTENT */
 }
 
@@ -42,16 +42,47 @@
 }
 
 .wrapper-row > .row-header > *:not(nav) {
-    border: 2px dashed rgb(245, 165, 25);
+    /* border: 2px dashed rgb(245, 165, 25); */
 }
 
 .wrapper-row > .row-header > nav {
     grid-area: rh-nav;
-    display: flex;
-    border: 2px dashed rgb(245, 25, 25);
+    /* border: 2px dashed rgb(245, 25, 25); */
     color: white;
-    /* background-color: yellow; */
 }
+
+/* --- */
+
+.row-header .nav-logo , .nav-menu {
+    align-self: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    /* border: 2px dashed rgb(245, 25, 25); */
+    color: white;
+}
+
+nav > .nav-logo {
+    margin-right: 10%;
+}
+
+nav .nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    /* gap: 30px; */ /* pixels are NOT reponsive-friendly */
+    gap: 2%;
+    margin-right: 2%;
+    width: 100%;
+}
+
+.wrapper-row > .row-header > nav .nav-menu * {
+    /* margin-right: 30px; */
+    color: white;
+}
+
+/* --- */
 
 .wrapper-row > .row-header > aside.left-column {
     grid-area: rh-aside-1;
@@ -74,7 +105,7 @@
 }
 
 .row-header > aside.left-column p {
-    font-size: 28px;
+    font-size: 18px;
     font-weight: 400;
     color: white;
 }
