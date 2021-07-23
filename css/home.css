@@ -10,34 +10,62 @@
 
 /* CUSTOME STYLE (HOME PAGE) OPEN : */
 
-.wrapper {
+/* .wrapper >  */.wrapper-row {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    width: var(--global-container-width); /* window.clientWidth */
+    width: var(--global-container-width); /* window.clientWidth i.e. user-agent viewport width excluding scrollbar */
     min-height: 100vh; /* otherwise some strict numeric value e.g. 800px */
 }
 
-.wrapper > .wrapper-row {
-    display: inherit;
-    justify-content: inherit;
-    width: inherit;
-    background: rgba(0, 0, 0, 0) url("../img/header-1.jpg") no-repeat scroll center center / cover;
-    z-index: 1;
-}
-
-.wrapper > .wrapper-row > .row-header {
+/* .wrapper >  */.wrapper-row > .row-header {
     position: relative;
-    display: inherit;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: /* minmax(80px, auto) */ 80px 1fr;
+    grid-template-areas: 
+    "rh-nav rh-nav"
+    "rh-aside-1 rh-aside-2";
     width: var(--global-container-width) /* var(--inner-container-width) */; /* change between to see the difference */
     height: auto; /* from now on .row-header children will state rules of height the .row-header have to adjust to */
-    border: 2px dashed red;
+    border: 4px dashed red; /* as if for .wrapper > .wrapper-row div[class*="col-"] {border: 2px dashed red} | might be required to change */
+    background: rgba(0, 0, 0, 0) url("../img/header-1.jpg") no-repeat scroll center center / cover;
+    z-index: 0;
+}
+
+.wrapper-row > .row-header > *:not(nav) {
+    border: 4px dashed rgb(95, 165, 255);
+}
+
+.wrapper-row > .row-header > nav {
+    grid-area: rh-nav;
+    /* background-color: yellow; */
+}
+
+.wrapper-row > .row-header > aside:nth-of-type(1) {
+    grid-area: rh-aside-1;
+    /* background-color: lightblue; */
+}
+
+.wrapper-row > .row-header > aside:nth-of-type(2) {
+    grid-area: rh-aside-2;
+    /* background-color: orange; */
 }
 
 .wrapper-row > .row-header > img#color-overlay {
-    width: 100%;
+    width: 100%; /* currently 100% of var(--global-container-width) */
     height: 100%; /* = 100% of 100vh of the screen : it presumably inherits not dirrectly from .row-header as it auto, but from .wrapper-row  */
-    position: absolute;
-    top: 0;
-    background-image: linear-gradient(-47deg, #8731E8 0%, rgba(69, 40, 220, 0.88) 100%);
+    background: linear-gradient(-47deg, #8731E8 0%, rgba(69, 40, 220, 0.88) 100%); position: absolute; top: 0;
+    z-index: 1;
 }
+
+.wrapper-row > .row-header > * {
+    z-index: 2; /* FROM NOW ON TEXT IS VISIBLE */
+}
+
+/* CONTENT IN BETWEEN HEADER & FOOTER (GLOBAL SETTINGS) : */
+/* .wrapper-row > [class*="row-"]:not(.row-header) {
+    position: relative;
+    display: grid;
+    width: var(--inner-container-width);
+    border: 2px dashed orange;
+} */
