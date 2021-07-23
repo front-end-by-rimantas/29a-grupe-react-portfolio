@@ -1,5 +1,6 @@
 :root{
     --global-container-width: calc(100vw - (100vw - 100%));
+    --global-minheight: 100vh;
     --global-container-padding: 0 200px;
     --global-container-padding-left: 200px;
     --inner-container-width: calc( var(--global-container-width) - ( var(--global-container-padding-left) * 2 ) ); /* between helper lines */

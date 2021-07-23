@@ -10,30 +10,38 @@
 
 /* CUSTOME STYLE (HOME PAGE) OPEN : */
 
-/* .wrapper >  */.wrapper-row {
+.wrapper-row {
     display: flex;
     justify-content: center;
+    position: relative;
     width: var(--global-container-width); /* window.clientWidth i.e. user-agent viewport width excluding scrollbar */
-    min-height: 100vh; /* otherwise some strict numeric value e.g. 800px */
-    border: 4px dashed red; /* as if for .wrapper > .wrapper-row div[class*="col-"] {border: 2px dashed red} | might be required to change */
     background: rgba(0, 0, 0, 0) url("../img/header-1.jpg") no-repeat scroll center center / cover;
     z-index: 0;
 }
 
-/* .wrapper >  */.wrapper-row > .row-header {
-    position: relative;
+.wrapper-row, .wrapper-row * {
+    height: auto; /* CRUCIAL LINE [DO NOT REMOVE] : IT AUTOMATICALLY ADJUST PARENT CONTAINER HEIGHT TO CHILDREN CONTENT */
+}
+
+/* DO NOT REMOVE THIS CLASS! : IT ADJUST SIZE OF --inner-container-width FOR ALL OTHER CLASSES , EXCEPT .row-header  */
+.wrapper-row > div[class*="row-"]:not(.row-header) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* or any another relative variation of columns needed */
+    width: var(--inner-container-width);
+    border: 2px dashed rgb(245, 25, 25);
+}
+
+.wrapper-row > .row-header { /* all the other should .row- would have default grid-template-columns: as repeat(2, 1fr)  */
+    display: grid;
+    grid-template-columns: calc(var(--global-container-width) * 0.6) calc(var(--global-container-width) * 0.4)/* repeat(2, 1fr) */;
     grid-template-rows: /* minmax(80px, auto) */ 80px 1fr;
     grid-template-areas: 
     "rh-nav rh-nav"
     "rh-aside-1 rh-aside-2";
     width: /* var(--global-container-width) */ var(--inner-container-width); /* change between to see the difference */
-    height: auto; /* from now on .row-header children will state rules of height the .row-header have to adjust to */
-
 }
 
-.wrapper-row > /* .row-header > */ img#color-overlay {
+.wrapper-row > img#color-overlay {
     width: 100%; /* currently 100% of var(--global-container-width) */
     height: 100%; /* = 100% of 100vh of the screen : it presumably inherits not dirrectly from .row-header as it auto, but from .wrapper-row  */
     background: linear-gradient(-47deg, #8731E8 0%, rgba(69, 40, 220, 0.88) 100%); position: absolute; top: 0;
@@ -50,23 +58,16 @@
 
 .wrapper-row > .row-header > nav {
     grid-area: rh-nav;
+    display: flex;
     border: 2px dashed rgb(245, 25, 25);
     background-color: yellow;
 }
 
 .wrapper-row > .row-header > aside.left-column {
     grid-area: rh-aside-1;
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
+    height: min-content;
     align-self: center;
     justify-self: center;
-    background-color: lightgoldenrodyellow;
-}
-
-.wrapper-row > .row-header > aside.right-column {
-    grid-area: rh-aside-2;
-    background-color: rgb(225, 0, 255);
 }
 
 .row-header > aside > h1 {
@@ -82,9 +83,10 @@
 }
 
 .row-header > aside > a.row-header--btn {
+    display: flex;
     width: fit-content;
     justify-self: left;
-    padding: 16px 32px;
+    padding: 16px 32px; /* only when display : flex , otherwise it may overlap other content */
     font-size: 16px !important;
     border-radius: 999px;
     text-transform: uppercase;
@@ -94,6 +96,13 @@
 
 /* NOTICE : in order for :hover to work use same path selector as above! */
 .row-header > aside > a.row-header--btn:hover {
+    transition-duration: 1s;
     background: var(--primary-btn-background);
     color: white;
+}
+
+.wrapper-row > .row-header > aside.right-column {
+    grid-area: rh-aside-2;
+    align-self: center;
+    justify-self: center;
 }

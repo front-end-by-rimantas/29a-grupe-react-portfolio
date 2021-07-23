@@ -1,0 +1,30 @@
+/* [relatively largest logical resolution] */
+@media only screen and (max-width: 1920px) {
+    .wrapper-row {
+    width: var(--global-container-width);
+    }
+}
+
+/* [the range in between relatively largest & smallest resolutions] */
+@media only screen and (max-width: var(--global-container-width)) {
+    .wrapper-row {
+    width: var(--global-container-width);
+    }
+}
+
+/* [relatively smallest logical resolution] */
+@media only screen and (max-width: 992px) {
+    .wrapper-row {
+    width: var(--global-container-width);
+    }
+    .wrapper-row > .row-header { /* all the other should .row- would have default grid-template-columns: as repeat(2, 1fr)  */
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-flow: column;
+        /* grid-template-rows: auto; */
+        grid-template-areas: 
+        "rh-nav"
+        "rh-aside-1"
+        "rh-aside-2";
+    }
+}

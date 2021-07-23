@@ -1,9 +1,11 @@
-/* .global-form {
-    display: grid;
-    max-width: 450px;
-    height: 530px;
+.row-header > aside.right-column > .global-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 450px; /* original size 446px */
+    height: 530px !important;
     padding: 50px;
-    border-radius: 8px;
+    border-radius: 4px;
     background-color: white;
 }
 
@@ -15,4 +17,4 @@
 .global-form button#save-btn {
     color: white;
     background: linear-gradient(-47deg, #8731E8 0%, rgba(69, 40, 220, 0.88) 100%);
-} */
+}
