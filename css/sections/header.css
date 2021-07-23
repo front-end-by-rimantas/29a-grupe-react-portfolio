@@ -3,8 +3,8 @@
     justify-content: center;
     position: relative;
     width: var(--global-container-width); /* window.clientWidth i.e. user-agent viewport width excluding scrollbar */
-    min-height: 100vh;
-    background: rgba(0, 0, 0, 0) url("../img/header-1.jpg") no-repeat scroll center center / cover;
+    min-height: 800px;
+    background: rgba(0, 0, 0, 0) url("../../img/header-1.jpg") no-repeat scroll center center / cover;
     z-index: 0;
 }
 
@@ -49,42 +49,46 @@
     grid-area: rh-nav;
     display: flex;
     border: 2px dashed rgb(245, 25, 25);
-    background-color: yellow;
+    color: white;
+    /* background-color: yellow; */
 }
 
 .wrapper-row > .row-header > aside.left-column {
     grid-area: rh-aside-1;
     height: min-content;
     align-self: center;
-    justify-self: center;
 }
 
-.row-header > aside > h1 {
+.row-header > aside.left-column > article {
+    display: flex; 
+    flex-direction: column;
+    row-gap: 20px;
+    max-width: 610px;
+    min-height: 310px /* !important */;
+}
+
+.row-header > aside.left-column h1 {
     font-size: 56px;
     font-weight: 600;
-    color: lightgreen;
+    color: white;
 }
 
-.row-header > aside > p {
+.row-header > aside.left-column p {
     font-size: 28px;
     font-weight: 400;
-    color: rosybrown;
+    color: white;
 }
 
-.row-header > aside > a.row-header--btn {
-    display: flex;
+.row-header > aside.left-column a.row-header--btn {
     width: fit-content;
-    justify-self: left;
     padding: 16px 32px; /* only when display : flex , otherwise it may overlap other content */
-    font-size: 16px !important;
     border-radius: 999px;
-    text-transform: uppercase;
+    font-size: 16px !important; text-transform: uppercase; color: rgb(110, 110, 110);
     background: white;
-    color: rgb(110, 110, 110);
 }
 
 /* NOTICE : in order for :hover to work use same path selector as above! */
-.row-header > aside > a.row-header--btn:hover {
+.row-header > aside.left-column a.row-header--btn:hover {
     transition-duration: 1s;
     background: var(--primary-btn-background);
     color: white;
