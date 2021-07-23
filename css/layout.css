@@ -13,7 +13,7 @@
 }
 
 /* [specific breakpoint] */
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1200px) {
     .wrapper-row {
     width: var(--global-container-width);
     }

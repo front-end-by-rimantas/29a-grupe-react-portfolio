@@ -3,7 +3,7 @@
     justify-content: center;
     position: relative;
     width: var(--global-container-width); /* window.clientWidth i.e. user-agent viewport width excluding scrollbar */
-    min-height: 800px;
+    min-height: 870px;
     background: rgba(0, 0, 0, 0) url("../../../img/header-1.jpg") no-repeat scroll center center / cover;
     z-index: 0;
 }
@@ -72,13 +72,13 @@ nav .nav-menu {
     display: flex;
     justify-content: flex-end;
     /* gap: 30px; */ /* pixels are NOT reponsive-friendly */
-    gap: 2%;
+    gap: 4%;
     margin-right: 2%;
     width: 100%;
 }
 
 .wrapper-row > .row-header > nav .nav-menu * {
-    /* margin-right: 30px; */
+    font-weight: 200;
     color: white;
 }
 
@@ -129,4 +129,15 @@ nav .nav-menu {
     grid-area: rh-aside-2;
     align-self: center;
     justify-self: center;
+}
+
+.wrapper-row > .shape-bottom {
+    transform: rotate(180deg);
+    width: var(--global-container-width);
+    position: absolute;
+    top: 0px;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
