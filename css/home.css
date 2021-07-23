@@ -15,6 +15,9 @@
     justify-content: center;
     width: var(--global-container-width); /* window.clientWidth i.e. user-agent viewport width excluding scrollbar */
     min-height: 100vh; /* otherwise some strict numeric value e.g. 800px */
+    border: 4px dashed red; /* as if for .wrapper > .wrapper-row div[class*="col-"] {border: 2px dashed red} | might be required to change */
+    background: rgba(0, 0, 0, 0) url("../img/header-1.jpg") no-repeat scroll center center / cover;
+    z-index: 0;
 }
 
 /* .wrapper >  */.wrapper-row > .row-header {
@@ -25,33 +28,12 @@
     grid-template-areas: 
     "rh-nav rh-nav"
     "rh-aside-1 rh-aside-2";
-    width: var(--global-container-width) /* var(--inner-container-width) */; /* change between to see the difference */
+    width: /* var(--global-container-width) */ var(--inner-container-width); /* change between to see the difference */
     height: auto; /* from now on .row-header children will state rules of height the .row-header have to adjust to */
-    border: 4px dashed red; /* as if for .wrapper > .wrapper-row div[class*="col-"] {border: 2px dashed red} | might be required to change */
-    background: rgba(0, 0, 0, 0) url("../img/header-1.jpg") no-repeat scroll center center / cover;
-    z-index: 0;
+
 }
 
-.wrapper-row > .row-header > *:not(nav) {
-    border: 4px dashed rgb(95, 165, 255);
-}
-
-.wrapper-row > .row-header > nav {
-    grid-area: rh-nav;
-    /* background-color: yellow; */
-}
-
-.wrapper-row > .row-header > aside:nth-of-type(1) {
-    grid-area: rh-aside-1;
-    /* background-color: lightblue; */
-}
-
-.wrapper-row > .row-header > aside:nth-of-type(2) {
-    grid-area: rh-aside-2;
-    /* background-color: orange; */
-}
-
-.wrapper-row > .row-header > img#color-overlay {
+.wrapper-row > /* .row-header > */ img#color-overlay {
     width: 100%; /* currently 100% of var(--global-container-width) */
     height: 100%; /* = 100% of 100vh of the screen : it presumably inherits not dirrectly from .row-header as it auto, but from .wrapper-row  */
     background: linear-gradient(-47deg, #8731E8 0%, rgba(69, 40, 220, 0.88) 100%); position: absolute; top: 0;
@@ -62,10 +44,56 @@
     z-index: 2; /* FROM NOW ON TEXT IS VISIBLE */
 }
 
-/* CONTENT IN BETWEEN HEADER & FOOTER (GLOBAL SETTINGS) : */
-/* .wrapper-row > [class*="row-"]:not(.row-header) {
-    position: relative;
-    display: grid;
-    width: var(--inner-container-width);
-    border: 2px dashed orange;
-} */
+.wrapper-row > .row-header > *:not(nav) {
+    border: 2px dashed rgb(245, 165, 25);
+}
+
+.wrapper-row > .row-header > nav {
+    grid-area: rh-nav;
+    border: 2px dashed rgb(245, 25, 25);
+    background-color: yellow;
+}
+
+.wrapper-row > .row-header > aside.left-column {
+    grid-area: rh-aside-1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-self: center;
+    justify-self: center;
+    background-color: lightgoldenrodyellow;
+}
+
+.wrapper-row > .row-header > aside.right-column {
+    grid-area: rh-aside-2;
+    background-color: rgb(225, 0, 255);
+}
+
+.row-header > aside > h1 {
+    font-size: 56px;
+    font-weight: 600;
+    color: lightgreen;
+}
+
+.row-header > aside > p {
+    font-size: 28px;
+    font-weight: 400;
+    color: rosybrown;
+}
+
+.row-header > aside > a.row-header--btn {
+    width: fit-content;
+    justify-self: left;
+    padding: 16px 32px;
+    font-size: 16px !important;
+    border-radius: 999px;
+    text-transform: uppercase;
+    background: white;
+    color: rgb(110, 110, 110);
+}
+
+/* NOTICE : in order for :hover to work use same path selector as above! */
+.row-header > aside > a.row-header--btn:hover {
+    background: var(--primary-btn-background);
+    color: white;
+}
