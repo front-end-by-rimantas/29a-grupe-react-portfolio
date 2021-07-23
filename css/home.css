@@ -22,7 +22,11 @@
 }
 
 .wrapper > .wrapper-row div[class*="col-"] {
-    border: 2px dashed red; /* helper */
+    /* border: 2px dashed red; */ /* helper */
+}
+
+.wrapper > .wrapper-row > .row-header div[class*="col-"] {
+    border: 0 !important; /* helper */
 }
 
 .wrapper > .wrapper-row > div[class*="row-"] {
@@ -31,26 +35,56 @@
 }
 
 /* Header open : */
+div.nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    height: 80px;
+    width: inherit;
+    position: relative; /* [^temp-clearfix] as should be :absolute; for good looking overlay  */
+    top: 0;
+    padding: 0 200px;
+    background-color: transparent;
+    /* [WILL BE USED LATER]
+    position: sticky;
+    top: 0px; 
+    */
+    z-index: 2; /* [MUST STAY AS IS] */
+}
+
+
+div.nav  > .nav-logo {
+    display: inherit;
+    min-width: 330px;
+}
+
+div.nav > .nav-menu {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 30px;
+}
+
+div.nav > .nav-menu > div {
+    color: white;
+}
+
 .wrapper-row > .row-header {
     display: grid;
-    column-gap: 64px;
     position: relative;
     width: inherit;
-    height: 100vh;
-    padding: 200px !important;
+    padding: 100px 200px 146px 200px !important;
     grid-template-columns: repeat(2, 1fr);
     background: rgba(0, 0, 0, 0) url("./img/header-1.jpg") no-repeat scroll center center / cover;
 }
 
 .wrapper-row > .row-header > img#color-overlay {
     position: absolute;
-    top: 0;
-    left: 0; 
+    top: -80px; /* [^temp-clearfix] :0px as former */
+    left: 0;
     width: 100%;
-    height: 100%;
+    height: calc(100% + 80px);/* [^temp-clearfix] :100% as former */
     background-image: linear-gradient(-47deg, #8731E8 0%, rgba(69, 40, 220, 0.88) 100%);
 }
-
 
 .wrapper-row > .row-header > .header-text {
     /* max-height: 330px; */
@@ -66,11 +100,7 @@
     color: black;
 }
 
-.wrapper > .wrapper-row > .row-header > div[class*="col-"] {
-    border: 0 !important; /* helper */
-}
-
-a.global-btn.header {
+a.global-btn.header { 
     width: fit-content;
     justify-self: left;
     padding: 16px 32px;
@@ -78,6 +108,11 @@ a.global-btn.header {
     border-radius: 999px;
     text-transform: uppercase;
     background: white;
+}
+
+a.global-btn.header:hover {
+    background: var(--primary-btn-background);
+    color: white;
 }
 
 .wrapper-row > .row-header > * { /* ALL THE TEXT (HOME PAGE) */
@@ -96,7 +131,7 @@ div.shape-bottom {
 }
 
 div.row-header > div.col-6.header-form {
-    justify-items: center;
+    justify-items: right;
     align-items: center;
 }
 /* Header close ; */
@@ -476,7 +511,7 @@ div.row-header > div.col-6.header-form {
     grid-area: rh7-bottom-12;
 }
 .sector8-center {
-    justify-self: center;
+    justify-items: center;
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
 }
