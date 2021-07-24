@@ -29,4 +29,8 @@
 @import './sections/communicate.css';
 /* |-- Communicate close */
 
+/* |-- Manage open */
+@import './sections/manage.css';
+/* |-- Manage close */
+
 /* |- CUSTOME STYLE (HOME PAGE) CLOSE ; */
