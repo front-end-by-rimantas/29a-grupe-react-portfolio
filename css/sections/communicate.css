@@ -1,12 +1,13 @@
 /* Device communicate open : */
 
-.wrapper > .row-header3 {
-    display: grid; 
+.wrapper .row-header3 {
+    display: grid;
+    justify-self: center;
     width: var(--inner-container-width);
     grid-template-columns: repeat(2, 1fr);
 }
 
-.wrapper > .row-header3 > div:nth-child(1) {
+.wrapper .row-header3 > div:nth-child(1) {
     justify-self: center;
 }
 
@@ -26,12 +27,14 @@
 .img-phone2 {
     width: 100%;
     height: auto;
-    max-width: 540px;
     padding: 15px;
     padding-top: 4rem;
 }
 
-.background-sector3 {
+.wrapper .background-sector3 {
+    display: grid;
+    justify-content: center;
+    width: var(--global-container-width);
     background: #f6f9fe;
 }
 

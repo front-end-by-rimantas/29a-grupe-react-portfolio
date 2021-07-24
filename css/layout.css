@@ -37,6 +37,13 @@
     }
 }
 
+@media only screen and (max-width: 992px) {
+    .wrapper .row-header3 {
+        width: var(--global-container-width);
+        grid-template-columns: 1fr;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .wrapper > .row-header2 {
         width: var(--global-container-width);
