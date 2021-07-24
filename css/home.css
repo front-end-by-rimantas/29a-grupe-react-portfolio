@@ -7,9 +7,26 @@
 /* Components : */
 @import './components/button.css';
 
-/* CUSTOME STYLE (HOME PAGE) OPEN : */
+/* |- CUSTOME STYLE (HOME PAGE) OPEN : */
 
-@import './sections/header/header.css';
-@import './sections/header/global-form.css';
+/* DO NOT REMOVE THIS CLASS! : IT GLOBALLY ADJUST SIZE OF --inner-container-width FOR ALL OTHER CLASSES , EXCEPT .row-header */
+/* div[class*="row-"]:not(.row-header) {
+    display: grid;
+    width: var(--inner-container-width);
+    border: 2px dashed rgb(245, 25, 25);
+} */
 
-/* CUSTOME STYLE (HOME PAGE) CLOSE ; */
+/* |-- Header open */
+@import './sections/header.css';
+@import './sections/header/header-form.css';
+/* |-- Header close */
+
+/* |-- Cards open */
+@import './sections/cards.css';
+/* |-- Cards close */
+
+/* |-- Communicate open */
+@import './sections/communicate.css';
+/* |-- Communicate close */
+
+/* |- CUSTOME STYLE (HOME PAGE) CLOSE ; */

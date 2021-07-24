@@ -1,23 +1,13 @@
 /* [relatively largest logical resolution] */
-@media only screen and (max-width: 1920px) {
-    .wrapper-row {
-    width: var(--global-container-width);
+/* @media only screen and (max-width: 1920px) {
+    .some-class {
+        some-prop: some-value;
     }
-}
-
-/* [the range in between relatively largest & max-width: 992px] */
-@media only screen and (max-width: var(--global-container-width)) {
-    .wrapper-row {
-    width: var(--global-container-width);
-    }
-}
+} */
 
 /* [specific breakpoint] */
 @media only screen and (max-width: 1200px) {
-    .wrapper-row {
-    width: var(--global-container-width);
-    }
-    .wrapper-row > .row-header { /* all the other should .row- would have default grid-template-columns: as repeat(2, 1fr)  */
+    .wrapper-row > .row-header {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -33,7 +23,6 @@
         margin-top: 50px;
     }
     .wrapper > .row-header2 {
-        /* display: grid;  */
         width: var(--global-container-width);
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -42,14 +31,14 @@
         "rh2-1-col3 rh2-2-col3"
         "rh2-3-col3 .";
     }
+    .wrapper > .row-header3 {
+        width: var(--global-container-width);
+        grid-template-columns: 1fr;
+    }
 }
 
 @media only screen and (max-width: 768px) {
-    .wrapper-row {
-    width: var(--global-container-width);
-    }
     .wrapper > .row-header2 {
-        display: grid; 
         width: var(--global-container-width);
         grid-template-columns: 1fr;
         grid-template-areas: 

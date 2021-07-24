@@ -1,0 +1,76 @@
+/* Device communicate open : */
+
+.wrapper > .row-header3 {
+    display: grid; 
+    width: var(--inner-container-width);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.wrapper > .row-header3 > div:nth-child(1) {
+    justify-self: center;
+}
+
+.header-font {
+    padding-top: 4rem;
+    font-size: 40px;
+    line-height: 1.3;
+    color: #222;
+    margin-bottom: 0px;
+}
+
+.sector3-padding {
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.img-phone2 {
+    width: 100%;
+    height: auto;
+    max-width: 540px;
+    padding: 15px;
+    padding-top: 4rem;
+}
+
+.background-sector3 {
+    background: #f6f9fe;
+}
+
+.eCommunicate-div {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.sector3-div {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    align-items:center;
+}
+
+.sector3-div > .fa {
+    color: #764fe0;
+    font-size: 14px;
+    padding-left: 0;
+    padding-right: 0.5rem;
+}
+
+.service-icon {
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+    height: 54px;
+    width: 54px;
+    display: inline-block;
+    text-align: center;
+    line-height: 54px;
+    font-size: 24px;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%);
+}
+
+.service-icon > .fa {
+    color: #7c4fe0;
+}
+
+/* Device communicate close ; */
