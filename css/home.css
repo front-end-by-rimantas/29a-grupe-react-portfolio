@@ -734,29 +734,81 @@ body > div > div > div.row-header8 > div.col-bottom-12 > div:nth-child(1) > p {
     font-weight: 600;
     color: #222;
 }
+.sector9-container {
+    position: relative;
+    width: 255px;
+    overflow: hidden;
+}
+.sector9-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 255px;
+    max-height: 255px;
+    transition: .3s ease;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+.sector9-container:hover .sector9-image {
+    transform: scale(1.3);
+    overflow: hidden;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.sector9-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:rgb(102, 16, 242, 0.6);
+    overflow: hidden;
+    width: 255px;
+    height: 255px;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+}
+.sector9-container:hover .sector9-overlay {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+.sector9-text {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-left: 47%;
+    margin-top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 40px;
+}
+.sector9-radius-100 {
+    border-radius: 100px !important;
+}
+.sector9-logos {
+    padding: .5rem!important;
+    text-decoration: none;
+    color: white;
+}
+.sector9-logos > .fa:hover {
+    /* font-size: 15px; */
+    transform: scale(1.3);
+    transition: .2s ease;
+}
+.row-header9 > .col-3 {
+    display: inline-block;
+    padding: 0px 15px;
+}
+.row-header9 {
+    padding-bottom: 100px;
+    text-align: center;
+}
 
 /* Our Team Experts close ; */
 
