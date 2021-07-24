@@ -1,6 +1,17 @@
-.wrapper-row {
+.wrapper {
+    /* display: grid; */
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: var(--global-container-width); /* window.clientWidth i.e. user-agent viewport width excluding scrollbar */
+    min-height: 870px;
+    z-index: 0;
+}
+
+/* .wrapper > */ .wrapper-row {
+    display: grid/* flex */;
+    grid-template-columns: 1fr;
+    justify-items: center/* center */;
     position: relative;
     width: var(--global-container-width); /* window.clientWidth i.e. user-agent viewport width excluding scrollbar */
     min-height: 870px;
@@ -14,12 +25,12 @@
 
 .wrapper-row > .row-header { /* all the other should .row- would have default grid-template-columns: as repeat(2, 1fr)  */
     display: grid;
-    grid-template-columns: calc(var(--global-container-width) * 0.6) calc(var(--global-container-width) * 0.4)/* repeat(2, 1fr) */;
+    grid-template-columns: 60% 40%/* repeat(2, 1fr) */;
     grid-template-rows: /* minmax(80px, auto) */ 80px 1fr;
     grid-template-areas: 
     "rh-nav rh-nav"
     "rh-aside-1 rh-aside-2";
-    width: /* var(--global-container-width) */ var(--inner-container-width); /* change between to see the difference */
+    width: var(--inner-container-width);
 }
 
 .wrapper-row > img#color-overlay {
@@ -134,27 +145,27 @@ nav .nav-menu {
     z-index: 1;
 }
 
+/* --- */
+
 /* DO NOT REMOVE THIS CLASS! : IT ADJUST SIZE OF --inner-container-width FOR ALL OTHER CLASSES , EXCEPT .row-header  */
-.wrapper-row > div[class*="row-"]:not(.row-header) {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* or any another relative variation of columns needed */
+div[class*="row-"]/* :not(.row-header) */ {
+/*     display: grid;
     width: var(--inner-container-width);
-    border: 2px dashed rgb(245, 25, 25);
+    border: 2px dashed rgb(245, 25, 25); */
 }
 
 /* --- */
 
 /* express functionality : open */
-.row-header2 {
-    display: grid; 
-    width: inherit;
+.wrapper > .row-header2 {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
     "rh2-col12 rh2-col12 rh2-col12"
     "rh2-1-col3 rh2-2-col3 rh2-3-col3";
+    width: var(--inner-container-width);
     background-color: white;
-    background: none !important;
 }
 
 .row-header2 > .col-12 {

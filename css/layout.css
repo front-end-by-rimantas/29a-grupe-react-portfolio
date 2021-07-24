@@ -20,11 +20,11 @@
     .wrapper-row > .row-header { /* all the other should .row- would have default grid-template-columns: as repeat(2, 1fr)  */
         display: grid;
         grid-template-columns: 1fr;
-        width: var(--global-container-width);
         grid-template-areas: 
         "rh-nav"
         "rh-aside-1"
         "rh-aside-2";
+        width: var(--global-container-width);
     }
     nav .nav-menu {
         display: none; /* instead do burger */
@@ -32,14 +32,8 @@
     .global-form {
         margin-top: 50px;
     }
-}
-
-@media only screen and (max-width: 992px) {
-    .wrapper-row {
-    width: var(--global-container-width);
-    }
-    .row-header2 {
-        display: grid; 
+    .wrapper > .row-header2 {
+        /* display: grid;  */
         width: var(--global-container-width);
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -47,26 +41,21 @@
         "rh2-col12 rh2-col12"
         "rh2-1-col3 rh2-2-col3"
         "rh2-3-col3 .";
-        background-color: white;
-        background: none !important;
     }
-} 
+}
 
 @media only screen and (max-width: 768px) {
     .wrapper-row {
     width: var(--global-container-width);
     }
-    .row-header2 {
+    .wrapper > .row-header2 {
         display: grid; 
-        /* width: var(--global-container-width); */
+        width: var(--global-container-width);
         grid-template-columns: 1fr;
         grid-template-areas: 
         "rh2-col12"
         "rh2-1-col3"
         "rh2-2-col3"
         "rh2-3-col3";
-/*         grid-template-rows: auto;
-        background-color: white;
-        background: none !important; */
     }
 }
