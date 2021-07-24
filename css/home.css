@@ -23,7 +23,7 @@
 }
 
 .wrapper > .wrapper-row div[class*="col-"] {
-   /* border: 2px dashed red; /*helper */
+   border: 2px dashed red; /*helper */
 }
 
 .wrapper > .wrapper-row > .row-header div[class*="col-"] {
@@ -850,7 +850,7 @@ div.row-header8 > div.col-bottom-12 > div.row-header11 > div > div > input {
 .sector12-center {
     text-align: center;
     margin: auto;
-    width: 50%;
+    max-width: 540px;
 }
 .row-header12 > .col-12 > h1 {
     font-size: 40px;
@@ -866,12 +866,37 @@ div.row-header8 > div.col-bottom-12 > div.row-header11 > div > div > input {
     color: #565656;
     padding-bottom: 50px;
 }
-
-
-
-
-
-
+.sector12-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #565656;
+    text-decoration: none;
+}
+.sector12-fa {
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    line-height: 52px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #7c4fe0;
+    color: #fff;
+    border-radius: 4px;
+    align-self: center;
+}
+.sector12-a {
+    text-decoration: none;
+    text-align: left;
+    align-self: center;
+}
+.sector12-fa-padding {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.row-header12 > .col-6 > .sector12-fa-padding > .sector12-a > a:hover {
+    color: blue;
+}
 
 
 
