@@ -73,6 +73,12 @@
     /* technically should break hereby [changed to max-width: 1200px] :
      .wrapper .row-header5 .special-arrow {
         display: none;
-    } 
+    }  
     */
+}
+
+@media only screen and (max-width: 570px) {
+    .row-slide {
+        display: none;
+    }
 }

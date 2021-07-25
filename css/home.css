@@ -37,4 +37,9 @@
 @import './sections/how-sApp-works.css';
 /* |-- How-sApp-works close */
 
+/* |-- sApp slider open */
+@import './sections/slider.css';
+@import './sections/slider/slider-script.css';
+/* |-- sApp slider close */
+
 /* |- CUSTOME STYLE (HOME PAGE) CLOSE ; */

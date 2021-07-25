@@ -1,0 +1,29 @@
+/* Slide open : */
+
+/* .wrapper-row >  */.row-slide {
+    display: grid; 
+    width: var(--inner-container-width);
+    grid-template-columns: 1fr;
+}
+
+.col-12.slide-col-12.slider-text {
+    text-align: center;
+    padding-top: 80px;
+}
+
+.col-12.slide-col-12.slider-text > h1 {
+    font-size: 40px;
+}
+
+.col-12.slide-col-12.slider-text > .icons-text {
+    margin-bottom: 10px;
+}
+
+.col-12.slide-col-12.slider-text > .hor-line {
+    margin: auto;
+    width: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Slide close ; */
