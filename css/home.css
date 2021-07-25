@@ -23,7 +23,7 @@
 }
 
 .wrapper > .wrapper-row div[class*="col-"] {
-   border: 2px dashed red; /*helper */
+/*    border: 2px dashed red; */ /*helper */
 }
 
 .wrapper > .wrapper-row > .row-header div[class*="col-"] {
@@ -897,8 +897,36 @@ div.row-header8 > div.col-bottom-12 > div.row-header11 > div > div > input {
 .row-header12 > .col-6 > .sector12-fa-padding > .sector12-a > a:hover {
     color: blue;
 }
-
-
+.row-header12-input {
+    max-width: 500px;
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline-block;
+    width: 100%;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 14px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+    outline: none;
+    border: none;
+    text-align: left;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+}
+.row-header12-row {
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+.row-header12 > .col-6 > div > .row-header12-row > textarea {
+    height: 160px;
+    padding: 15px;
+}
+.row-header12 > .col-6 > div > .row-header12-row > button {
+    max-width: 500px;
+    width: 100%;
+}
 
 
 
