@@ -33,4 +33,8 @@
 @import './sections/manage.css';
 /* |-- Manage close */
 
+/* |-- How-sApp-works open */
+@import './sections/how-sApp-works.css';
+/* |-- How-sApp-works close */
+
 /* |- CUSTOME STYLE (HOME PAGE) CLOSE ; */

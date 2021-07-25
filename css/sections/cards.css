@@ -1,4 +1,4 @@
-/* Express functionality open */
+/* Express functionality (cards) open */
 
 .wrapper > .row-header2 {
     display: grid;
@@ -6,7 +6,7 @@
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
     "rh2-col12 rh2-col12 rh2-col12"
-    "rh2-1-col3 rh2-2-col3 rh2-3-col3";
+    "rh2-1-col4 rh2-2-col4 rh2-3-col4";
     width: var(--inner-container-width);
     background-color: white;
 }
@@ -16,16 +16,16 @@
     justify-content: left;
 }
 
-.row-header2 > div.col-3:nth-of-type(2) {
-    grid-area: rh2-1-col3;
+.row-header2 > div.col-4:nth-of-type(2) {
+    grid-area: rh2-1-col4;
 }
 
-.row-header2 > div.col-3:nth-of-type(3) {
-    grid-area: rh2-2-col3;
+.row-header2 > div.col-4:nth-of-type(3) {
+    grid-area: rh2-2-col4;
 }
 
-.row-header2 > div.col-3:nth-of-type(4) {
-    grid-area: rh2-3-col3;
+.row-header2 > div.col-4:nth-of-type(4) {
+    grid-area: rh2-3-col4;
 }
 
 .express {
@@ -102,4 +102,4 @@
     color: #565656;
 }
 
-/* Express functionality close ;  */
+/* Express functionality (cards) close ;  */

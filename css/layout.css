@@ -28,12 +28,15 @@
         grid-template-rows: repeat(2, 1fr);
         grid-template-areas: 
         "rh2-col12 rh2-col12"
-        "rh2-1-col3 rh2-2-col3"
-        "rh2-3-col3 .";
+        "rh2-1-col4 rh2-2-col4"
+        "rh2-3-col4 .";
     }
     .wrapper > .row-header3 {
         width: var(--global-container-width);
         grid-template-columns: 1fr;
+    }
+    .wrapper .row-header5 .special-arrow {
+        display: none;
     }
 }
 
@@ -54,8 +57,22 @@
         grid-template-columns: 1fr;
         grid-template-areas: 
         "rh2-col12"
-        "rh2-1-col3"
-        "rh2-2-col3"
-        "rh2-3-col3";
+        "rh2-1-col4"
+        "rh2-2-col4"
+        "rh2-3-col4";
     }
+    .wrapper .row-header5 {
+        width: var(--global-container-width);
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "rh5-col12"
+        "rh5-1-col4"
+        "rh5-2-col4"
+        "rh5-3-col4";
+    }
+    /* technically should break hereby [changed to max-width: 1200px] :
+     .wrapper .row-header5 .special-arrow {
+        display: none;
+    } 
+    */
 }

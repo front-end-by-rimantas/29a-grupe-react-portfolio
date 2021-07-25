@@ -1,5 +1,12 @@
 /* Device communicate open : */
 
+.background-sector3 {
+    display: grid;
+    justify-content: center;
+    width: var(--global-container-width);
+    background: #f6f9fe;
+}
+
 .wrapper .row-header3 {
     display: grid;
     justify-self: center;
@@ -29,13 +36,6 @@
     height: auto;
     padding: 15px;
     padding-top: 4rem;
-}
-
-.wrapper .background-sector3 {
-    display: grid;
-    justify-content: center;
-    width: var(--global-container-width);
-    background: #f6f9fe;
 }
 
 .eCommunicate-div {
