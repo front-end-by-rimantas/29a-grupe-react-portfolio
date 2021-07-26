@@ -4,7 +4,20 @@
 
 
 let slideIndex = 1;
-showSlides(slideIndex);
+for (let i = 1; i < 4; i++) {
+     if (i > 3) {
+        slideIndex = 1;
+        i = 1;
+        console.log("ciklas baigėsi");
+    } 
+setTimeout(function() {
+    slideIndex = i;
+    showSlides(slideIndex);
+    console.log(i);
+    }, 2000);
+}
+
+// showSlides(slideIndex);
 
 document.getElementById("prev").onclick = function () {
   showSlides(slideIndex += (-1));
