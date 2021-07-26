@@ -1,0 +1,6 @@
+:root{
+    /* calc (window.clientWidth) excluding vertical bar, instead of box-like container e.g. as former of 1440px */
+    --global-container-width: calc(100vw - (100vw - 100%));
+ /* --boxed-container-width: <numeric-value>px; e.g. where as <numeric-value> == 1440px  */
+    --primary-btn-background: linear-gradient(-47deg, #8731E8 0%, #4528DC 100%);
+}

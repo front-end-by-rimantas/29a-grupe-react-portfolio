@@ -1,0 +1,39 @@
+/* silent is golden */
+
+/* mygtukai su nevientisa spalva*/
+.btn {
+    display: inline-block;
+    padding: 18px 30px;
+    background: var(--primary-btn-background);
+    line-height: 1;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 6px;
+    color: #fff;
+    text-transform: capitalize;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    box-shadow: 5px 5px 5px #8888 ;
+}
+
+/* mygtukai su vientisa violetine spalva*/
+.btn-static-color {
+    display: inline-block;
+    height: 60px;
+    padding: 18px 30px;
+    line-height: 1;
+    background-color: #7c4fe0;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 8px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.btn-static-color:hover {
+    box-shadow: 5px 5px 5px #8888 ;
+}

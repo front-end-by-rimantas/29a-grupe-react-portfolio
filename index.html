@@ -8,144 +8,475 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<link rel="icon" href="./img/favicon/logo.png" />
 
 <body>
 <div class="wrapper">
     <div class="wrapper-row">
     
-    <!--Header start-->
-    <div class="row-header"><img id="row-header">
-        <div class="col-6">.col-6</div>
-        <div class="col-6">.col-6</div>
+    <!--Header open-->
+    <div class="nav">
+        <div class="nav-logo"><img src="img/logo-white.png"></div>
+        <div class="nav-menu">
+            <div id="nav-menu-home">Home&#9662;</div>
+            <div>Features</div>
+            <div id="nav-menu-pages">Pages&#9662;</div>
+            <div>Screenshots</div>
+            <div>Pricing</div>
+            <div>Contact</div>
+        </div>
+    </div>
+    <div class="row-header"><img id="color-overlay">
+        <div class="col-6 header-text">
+            <h1 style="font-size: 54px;">Stay connected with your customers</h1>
+            <p style="font-size: 16px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nihil tenetur minus quidem est deserunt molestias accusamus harum ullam tempore debitis et, expedita, repellat delectus aspernatur neque itaque qui quod.</p>
+            <a class="global-btn header">start free trail</a>
+        </div>
+        <div class="col-6 header-form">
+            <form class="global-form" href="#">
+                <h1 style="color: black; font-size: 28px;">Get started for FREE!</h1>
+                <p style="color: rgb(170, 170, 170); font-size: 16px;">Fill all fields so we can get some info about you. We'll never send you spam</p>
+                <div class="form-row">
+                    <input class="subscribe-input" type="text" placeholder="name" required>
+                </div>
+                <div class="form-row">
+                    <input class="subscribe-input" type="text" placeholder="email" required>
+                </div>
+                <div class="form-row">
+                    <input class="subscribe-input" type="password" placeholder="phone" required>
+                </div>
+                <div class="form-row">
+                    <button class="btn-static-color subscribe-btn" id="save-btn" type="submit">Send Message</button>
+                    <p style="color: black; font-size: 14px; margin-top: 22px;">By signing up, you accept our <u>Terms</u> & <u>Privacy Policy</u></p>
+                </div>
+            </form>
+        </div>
+        <div class="shape-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"><path class="shape-fill" fill="#FFFFFF" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7  c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4  c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path></svg></div>
     </div>
     <!--Header close-->
 
-    <!--Counter start-->
-    <div class="row-header2"><img id="row-header2">
-        <div class="col-3">.col-3</div>
-        <div class="col-3">.col-3</div>
-        <div class="col-3">.col-3</div>
-        <div class="col-3">.col-3</div>
-    </div>
-    <!--Counter close-->
+    <!--Express functionality open-->
+    <div class="row-header2">
+        <div class="col-12">
+            <div class="express">
+                <p class="premium-border"><i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                    <span>Premium</span>Features</p>
+                <h1>Express Functionality</h1>
+                <div class="hor-line"></div>
+                <p class="icons-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, amet quam. Ipsum fuga eius possimus laborum est ipsam quidem amet?</p>
+            </div>
+        </div>
 
-    <!--Features start-->
-    <div class="row-features"><img id="row-features">
-        <div class="col-12">.col-12</div>
-        <div class="col-4">.col-4</div>
-        <div class="col-4">.col-4</div>
-        <div class="col-4">.col-4</div>
+        <div class="col-3">
+            <div class="border-3x2">
+                <img src="./img/express-functionality/layers.png" alt="layers">
+                <h4>Fully functional</h4>
+                <p class="icons-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio commodi architecto! Animi, veritatis!</p>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="border-3x2">
+                <img src="./img/express-functionality/chats.png" alt="chats">
+                <h4>Live Chat</h4>
+                <p class="icons-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio commodi architecto! Animi, veritatis!</p>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="border-3x2">
+                <img src="./img/express-functionality/lock.png" alt="lock">
+                <h4>Secure Data</h4>
+                <p class="icons-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio commodi architecto! Animi, veritatis!</p>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="border-3x2">
+                <img src="./img/express-functionality/cogs.png" alt="cogs">
+                <h4>Easy to Customize</h4>
+                <p class="icons-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio commodi architecto! Animi, veritatis!</p>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="border-3x2">
+                <img src="./img/express-functionality/windows.png" alt="windows">
+                <h4>Responsive Design</h4>
+                <p class="icons-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio commodi architecto! Animi, veritatis!</p>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="border-3x2">
+                <img src="./img/express-functionality/script-windows.png" alt="script">
+                <h4>Help Documentation</h4>
+                <p class="icons-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio commodi architecto! Animi, veritatis!</p>
+            </div>
+        </div>
     </div>
-    <!--Features close-->
+    <!--Express functionality close-->
 
-    <!--Device manage start-->
-    <div class="row-header3"><img id="row-header3">
-        <div class="col-6">.col-6</div>
-        <div class="col-6">.col-6</div>
+    <!--Device communicate open-->
+    <div class="row-header3 background-sector3"">
+        <div class="col-6" style="text-align: right;">
+            <img class="img-phone2" src="./img/phone2.png" alt="#" >
+        </div>
+        <div class="col-6">
+            <div class="eCommunicate-div">
+                <h1 class="header-font">Easily communicate with clients using sApp.</h1>
+                <p class="icons-text sector3-padding">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dolor ut iusto vitae autem neque eum ipsam, impedit asperiores vel cumque laborum dicta repellendus inventore voluptatibus et explicabo nobis unde.</p>
+                <ul>
+                    <div class="sector3-div">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <div class="icons-text">Combined with a handful of model sentence structures looks reasonable.</div>
+                    </div>
+                    <div class="sector3-div">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <div class="icons-text">Contrary to popular belief, Lorem Ipsum is not simply random text.</div>
+                    </div>
+                    <div class="sector3-div">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <div class="icons-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</div>
+                    </div>
+                    <div class="sector3-div">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <div class="icons-text">All the Lorem Ipsum generators on the Internet tend to repeat necessary.</div>
+                    </div>
+                </ul>
+                <div class="service-icon"><i class="fa fa-bell" aria-hidden="true"></i></div>
+                <div class="service-icon"><i class="fa fa-envelope-open" aria-hidden="true"></i></div>
+                <div class="service-icon"><i class="fa fa-video-camera" aria-hidden="true"></i></div>
+            </div>    
+        </div>
+    </div>
+    <!--Device communicate close-->
+
+    <!--Device manage open-->
+    <div class="row-header4">
+        <div class="col-6 text-icons-link-section">
+            <h1>Make Your Device Manage Everything For You</h1>
+            <ul class="service-list">
+                <div class="ul-items">
+                    <div class="icons-border">
+                        <i class="fa fa-database" aria-hidden="true"></i>
+                    </div>
+                    <p class="icons-text">Fully layered dolor sit amet, consectetur adipisicing elit. Facere, nobis, id expedita dolores officiis laboriosam.</p>
+                </div>
+                <div class="ul-items">
+                    <div class="icons-border">
+                        <i class="fa fa-paint-brush" aria-hidden="true"></i>
+                    </div>
+                    <p class="icons-text">Customizable design dolor sit amet, consectetur adipisicing elit. Facere, nobis, id expedita dolores officiis laboriosam.</p>
+                </div>
+                <div class="ul-items">
+                    <div class="icons-border">
+                        <i class="fa fa-fire" aria-hidden="true"></i>
+                    </div>
+                    <p class="icons-text">Drop ipsum dolor sit amet, consectetur adipisicing elit. Facere, nobis, id expedita dolores officiis laboriosam.</p>
+                </div>
+                <div class="ul-items">
+                    <div class="icons-border">
+                        <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                    </div>
+                    <p class="icons-text">Marketing chart dolor sit amet, consectetur adipisicing elit. Facere, nobis, id expedita dolores officiis laboriosam.</p>
+                </div>
+            </ul>
+            <a href="#" class="btn btn-link">learn more</a>
+        </div>
+        <div class="col-6 phone-img-sector">
+            <img src="./img/phone.png" alt="#" >
+        </div>
     </div>
     <!--Device manage close-->
 
-    <!--Device communicate start-->
-    <div class="row-header4"><img id="row-header4">
-        <div class="col-6">.col-6</div>
-        <div class="col-6">.col-6</div>
-    </div>
-    <!--Device communicate start-->
+    <!--sApp work open-->
+    <div class="row-header5">
+        <div class="col-12 sApp" >
+            <h1>How sApp works?</h1>
+            <p class="saap-padded">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
+        </div>
+        <div class="col-4 sApp">            
+            <img src="./img/sapp/work.png" alt="work">
+            <h2>Setup Your Profile!</h2>
+                <div class="special-arrow">
+                      <img src="./img/sapp/icon-arrow-right-white.png" alt="arrow" style="width: 64px; float: right;">            
+                </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus pariatur nam excepturi a iure temporibus.</p>
 
-    <!--sApp work start-->
-    <div class="row-header5"><img id="row-header5">
-        <div class="col-12">col-12</div>
-        <div class="col-4">.col-4</div>
-        <div class="col-4">.col-4</div>
-        <div class="col-4">.col-4</div>
+        </div>
+        <div class="col-4 sApp">        
+            <img src="./img/sapp/features.png" alt="features">
+            <h2>Enjoy The Features!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis eius voluptatum nulla asperiores, distinctio voluptatibus?</p>
+
+        </div>
+        <div class="col-4 sApp">
+            <img src="./img/sapp/install.png" alt="install">      
+            <h2>Install The App</h2>   
+                <div class="special-arrow">
+                    <img src="./img/sapp/icon-arrow-right-white.png" alt="arrow" style="width: 64px; float: right;">            
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nesciunt ad iure esse? Architecto, explicabo?</p>
+
+        </div>
     </div>
     <!--sApp work close-->
 
-    <!--Interface start-->
-    <div class="row-interface"><img id="row-interface">
-        <div class="col-12 interface-col-12">CONTENT</div>
+    <!--sApp dashboard review slide open-->
+    <div class="row-slide">
+        <div class="col-12 slide-col-12 slider-text">
+            <h1>Simple & Beautiful Interface</h1>
+            <div class="hor-line"></div>
+            <p class="icons-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quia eius fugit est laboriosam dolorem sequi possimus cum adipisci. Tenetur?</p>
+        
+        </div>
+        
+        <div class="col-12 slide-col-12">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="./img/slider-image/screen-1.JPG" style="width:100%">
+                  <div class="text"></div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="./img/slider-image/screen-2.JPG" style="width:100%">
+                  <div class="text"></div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="./img/slider-image/screen-3.JPG" style="width:100%">
+                  <div class="text"></div>
+                </div>
+                
+                <a class="prev" id="prev">&#10094;</a>
+                <a class="next" id="next">&#10095;</a>
+                
+            </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" id="dot1"></span> 
+                  <span class="dot" id="dot2"></span> 
+                  <span class="dot" id="dot3"></span> 
+                </div>
+        </div>
     </div>
-    <!--Interface close-->
+    <!--sApp dashboard review slide close-->
 
-    <!--Slide start-->
-    <div class="row-slide"><img id="row-slide">
-        <div class="col-12 slide-col-12">&lt;---SLIDER---&gt;</div>
-    </div>
-    <!--Slide close-->
+    <!--John Doe slide open-->
+    <!-- <div class="row-slide">
+        <div class="col-12 slide-col-12">John Doe</div>
+    </div> -->
+    <!--John Doe slide close-->
 
-    <!--Our customers start-->
-    <div class="row-header6"><img id="row-header6">
-        <div class="col-12">col-12</div>
-        <div class="col-4">.col-4</div>
-        <div class="col-4">.col-4</div>
-        <div class="col-4">.col-4</div>
+    <!--Unlock Full Power Of sApp OPEN-->
+    <div class="row-header7 background-sector3  sector8-height">
+        <div class="col-top-12 sector8-center">
+            <h1>Unlock Full Power Of sApp</h1>
+            <div class="sector8-line"></div>
+            <p class="icons-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
+        </div>
+        <div class="col-6">
+            <div class="sector8-border">
+                <div>
+                    <img class="sector8-img" src="./img/express-functionality/price_premium.png" alt="birbyne">
+                </div>
+                <div class="sector8-card-txt">pro</div>
+                <div class="sector8-price-font">
+                    <p>$</p>145
+                </div>
+                <div class="sector8-gaps icons-text">10GB Linux Web Space</div>
+                <div class="sector8-gaps icons-text">50 MySQL Databases</div>
+                <div class="sector8-gaps icons-text">Unlimited Email</div>
+                <div class="sector8-gaps icons-text" style="border-bottom: 1px solid #dee2e6">Daily Backups</div>
+                <a href="#" class="btn sector8-btn-st">Sign Up</a>
+            </div>
+        </div>
+        <div class="col-6" style="text-align: -webkit-right;">
+            <div class="sector8-border">
+                <div>
+                    <img class="sector8-img" src="./img/express-functionality/price_basic.png" alt="bycicle">
+                </div>
+                <div class="sector8-card-txt">basic</div>
+                <div class="sector8-price-font">
+                    <p>$</p>49
+                </div>
+                <div class="sector8-gaps icons-text">5GB Linux Web Space</div>
+                <div class="sector8-gaps icons-text">5 MySQL Databases</div>
+                <div class="sector8-gaps icons-text">24/7 Tech Support</div>
+                <div class="sector8-gaps icons-text" style="border-bottom: 1px solid #dee2e6">Daily Backups</div>
+                <a href="#" class="btn sector8-btn-st">Sign Up</a>
+            </div>
+        </div>
+        <div class="col-bottom-12">
+            <p class="sector8-text">Not sure what to choose? 
+                <a href="#" class="sector8-text">Contact Us</a>
+            </p>
+        </div>
     </div>
-    <!--Our customers close-->
+    <!--Unlock Full Power Of sApp CLOSE-->
 
-    <!--Plans start-->
-    <div class="row-header7"><img id="row-header7">
-        <div class="col-top-12">col-top-12</div>
-        <div class="col-6">.col-6</div>
-        <div class="col-6">.col-6</div>
-        <div class="col-bottom-12">col-bottom-12</div>
-    </div>
-    <!--Plans close-->
+    <!--FAQ open-->
 
-    <!--FAQ start-->
-    
-    <div class="row-header8"><img id="row-header8">
-        <div class="col-top-12">col-top-12</div>
-        <div class="col-6">.col-6</div>
-        <div class="col-6">.col-6</div>
-        <div class="col-bottom-12">col-bottom-12</div>
-    </div>
+    <!--nuimti style kai sutvarkysim <p> global styliu-->
+
+    <div class="row-header8">
+        <div class="col-top-12">
+            <div class="faq-header">
+            <h1>Frequently Asked Questions</h1>
+            <div class="sector8-line"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
+            </div>
+        </div>
+        <div class="col-6">
+            <div>
+            <h3>How to install sApp?</h3>
+            <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.</p>
+            <h3>Can I get support from the Author?</h3>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+            <h3>Do you have a free trail?</h3>
+            <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        </div>
+        <div class="col-6">
+            <div>
+            <h3>How can I edit my personal information?</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+            <h3>Contact form isn`t working?</h3>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+            <h3>Contact form isn`t working?</h3>
+            <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.</p>
+        </div>
+        </div>
+        <div class="col-bottom-12">
+            <div>
+         <p>Haven't find suitable answer?<a href="#" class="tell-us">Tell us what you need.</a></p>
+            
+        </div>
+
     <!--FAQ close-->
 
-    <!--Our Team Experts start-->
-    <div class="row-header9"><img id="row-header9">
-        <div class="col-12">.col-12</div>
-        <div class="col-3">.col-3</div>
-        <div class="col-3">.col-3</div>
-        <div class="col-3">.col-3</div>
-        <div class="col-3">.col-3</div>
+    <!--Our team experts open-->
+    <div class="row-header9">
+        <div class="col-12 sector8-center">
+            <h1>Our Team Experts</h1>
+            <div class="sector8-line"></div>
+            <p class="icons-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
+        </div>
+        <div class="col-3 ">
+            <div class="sector9-container sector9-radius-100">
+                <img src="./img/team-experts/avatar-1.png" alt="avatar-1" class="sector9-image sector9-radius-100">
+                <div class="sector9-overlay sector9-radius-100">
+                    <div class="sector9-text">
+                        <p style="font-size: 18px; line-height: 30px;">Junaid Hasan</p>
+                        <p>Founder & CEO</p>
+                        <a class="sector9-logos" href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a class="sector9-logos" href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a class="sector9-logos" href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        <a class="sector9-logos" href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="sector9-container sector9-radius-100">
+                <img src="./img/team-experts/avatar-2.png" alt="avatar-1" class="sector9-image sector9-radius-100">
+                <div class="sector9-overlay sector9-radius-100">
+                    <div class="sector9-text">
+                        <p style="font-size: 18px; line-height: 30px;">Jassica William</p>
+                        <p>Co-Founder</p>
+                        <a class="sector9-logos" href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a class="sector9-logos" href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a class="sector9-logos" href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        <a class="sector9-logos" href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="sector9-container sector9-radius-100">
+                <img src="./img/team-experts/avatar-3.png" alt="avatar-1" class="sector9-image sector9-radius-100">
+                <div class="sector9-overlay sector9-radius-100">
+                    <div class="sector9-text">
+                        <p style="font-size: 18px; line-height: 30px;">Md. Arham</p>
+                        <p>Web Designer</p>
+                        <a class="sector9-logos" href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a class="sector9-logos" href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a class="sector9-logos" href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        <a class="sector9-logos" href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="sector9-container sector9-radius-100">
+                <img src="./img/team-experts/avatar-4.png" alt="avatar-1" class="sector9-image sector9-radius-100">
+                <div class="sector9-overlay sector9-radius-100">
+                    <div class="sector9-text">
+                        <p style="font-size: 18px; line-height: 30px;">Yasmin Akter</p>
+                        <p>Graphic Designer</p>
+                        <a class="sector9-logos" href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a class="sector9-logos" href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a class="sector9-logos" href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        <a class="sector9-logos" href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <!--Our Team Experts close-->
+    <!--Our team experts close-->
 
-    <!--sApp is available for all devices start-->
-    <div class="row-header10"><img id="row-header10">
-        <div class="col-12 header10-col-12">Google Play</div>
+    <!--sApp all devices open-->
+    <div class="row-header10 section10-bg">
+        <div class="col-12 header10-col-12">
+            <h1>sApp is available for all devices</h1>
+            <p>sApp is available for all devices, consectetur adipisicing elit. Itaque at harum quam explicabo. Aliquam optio, delectus, dolorem quod neque eos totam. Delectus quae animi tenetur voluptates doloribus commodi dicta modi aliquid deserunt, quis maiores nesciunt autem, aperiam natus.</p>
+            <div class="section10-socicons">
+                <a href="#"><img src="./img/google-play.png" alt="#" style="max-width: 190px; max-height: 58px"></a>
+                <a href="#"><img src="./img/app-store.png" alt="#" style="max-width: 190px; max-height: 58px"></a>
+            </div>
+            <p>* Available on iPhone, iPad and all Android devices</p>
+        </div>
     </div>
-    <!--sApp is available for all devices close-->
+    <!--sApp all devices close-->
 
-    <!--Subscribe to get updates start-->
-    <div class="row-header11"><img id="row-header11">
-        <div class="col-12 header11-col-12">Subsribe us</div>
-    </div>
+    <!--Subscribe to get updates open-->
+     <div class="row-header11">
+        <div class="col-12 header11-col-12">
+            <div class="subscribe">
+            <h1>Subscribe to get updates</h1>
+            <p>By subscribing you will get newsleter, promotions adipisicing elit. Architecto beatae, asperiores tempore repudiandae saepe aspernatur unde voluptate sapiente quia ex.</p>
+            <input class="subscribe-input" type="email" placeholder="Enter your email">
+            <button class="btn-static-color subscribe-btn" >Subscribe</button>
+            </div>
+        </div>
+    </div> 
     <!--Subscribe to get updates close-->
 
-    <!--Stay Tuned start-->
-    <div class="row-header12"><img id="row-header12">
-        <div class="col-12">col-12</div>
-        <div class="col-6">.col-6</div>
-        <div class="col-6">.col-6</div>
-    </div>
-    <!--Stay Tuned close-->
+    <!--Stay tuned open-->
+<!--     <div class="row-header12">
+        <div class="col-12">Stay Tuned</div>
+        <div class="col-6">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+        </div>
+        <div class="col-6">INPUTFORM</div>
+    </div> -->
+    <!--Stay tuned close-->
 
-    <!--Footer start-->
-    <div class="row-header13"><img id="row-header13">
-        <div class="col-3">.col-3</div>
-        <div class="col-3">.col-3</div>
-        <div class="col-3">.col-3</div>
-        <div class="col-3">.col-3</div>
-        <!-- <hr> -->
-        <div class="col-12">.col-12</div>
-    </div>
+    <!--Footer open-->
+<!--     <div class="row-header13">
+        <div class="col-3">Social links</div>
+        <div class="col-3">Useful links</div>
+        <div class="col-3">Product Help</div>
+        <div class="col-3">App links</div>
+        <div class="col-12">Copyrights 2020 sApp All rights reserved.</div>
+    </div> -->
     <!--Footer close-->
     
     </div>
 </div>
-    <script src="./js/home.js" type="module" defer></script>
+    <script src="./js/home.js" type="module"></script>
 </body>
 
 </html>

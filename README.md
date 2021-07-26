@@ -27,7 +27,7 @@ Design: https://react.theme-land.com/theme-five
 
 ## Authors
 
-Audrius: [Github](https://github.com/ginotas)
-Justas: [Github] (https://github.com/Justas1988)
-Lukas: [Github] (https://github.com/projektorius96)
-Rimvydas: [Github] (https://github.com/Rimvydas1987)
+- Audrius: [Github](https://github.com/ginotas) 
+- Justas: [Github](https://github.com/Justas1988)  
+- Lukas: [Github](https://github.com/projektorius96)  
+- Rimvydas: [Github](https://github.com/Rimvydas1987)
